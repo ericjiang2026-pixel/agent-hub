@@ -710,6 +710,7 @@ function navigateTo(level, opts) {
     STATE.selectedAgent    = null;
     STATE.selectedUniverse = null;
     STATE.selectedTicker   = null;
+    hideTickerList();
     closePanel();
     st.textContent = `${Object.keys(HUB_DATA.agents).length} agents`;
 
@@ -717,6 +718,7 @@ function navigateTo(level, opts) {
     STATE.selectedAgent    = 'financial-analysis-agent';
     STATE.selectedUniverse = null;
     STATE.selectedTicker   = null;
+    hideTickerList();
     buildUnivPlanets();
     st.textContent = `${HUB_DATA.planetData.length} universes`;
 
@@ -724,14 +726,14 @@ function navigateTo(level, opts) {
     const uid = opts.universeId || STATE.selectedUniverse;
     STATE.selectedUniverse = uid;
     STATE.selectedTicker   = null;
-    buildTickerPlanets(uid);
-    const n = tickerPlanets.length;
+    const n = (HUB_DATA.tickers || []).filter(t => t.universe_id === uid).length;
     st.textContent = `${n} tickers`;
+    showTickerList(uid);
 
   } else if (level === 'TICKER') {
     const td = opts.tickerData;
     STATE.selectedTicker = td;
-    openPanel(renderTickerPanel(td));
+    openTickerPanel(td);
     st.textContent = td ? td.ticker : '';
 
   } else if (level === 'AGENT_REACTIVE') {
@@ -751,6 +753,247 @@ function navigateTo(level, opts) {
   }
 
   updateBreadcrumb();
+}
+
+// ══════════════════════════════════════════════════════════════════
+// TICKER LIST VIEW
+// ══════════════════════════════════════════════════════════════════
+let _currentTickerList  = [];
+let _filteredTickerList = [];
+let _currentSortKey     = 'da';
+
+function showTickerList(universeId) {
+  document.getElementById('galaxy').style.display = 'none';
+  const allTickers = window.HUB_DATA.tickers || [];
+  _currentTickerList  = allTickers.filter(t => t.universe_id === universeId);
+  _filteredTickerList = [..._currentTickerList];
+  _currentSortKey     = 'da';
+  sortTickerList('da');
+  document.getElementById('ticker-list-container').classList.remove('hidden');
+  const searchBox = document.getElementById('ticker-search');
+  if (searchBox) searchBox.value = '';
+}
+
+function hideTickerList() {
+  document.getElementById('ticker-list-container').classList.add('hidden');
+  document.getElementById('galaxy').style.display = 'block';
+}
+
+function filterTickerList(query) {
+  const q = query.toLowerCase().trim();
+  _filteredTickerList = q
+    ? _currentTickerList.filter(t => t.ticker.toLowerCase().includes(q))
+    : [..._currentTickerList];
+  renderTickerList();
+}
+
+function sortTickerList(key) {
+  _currentSortKey = key;
+  document.querySelectorAll('.sort-btn').forEach(b => {
+    b.classList.remove('active');
+    if (b.getAttribute('onclick') === `sortTickerList('${key}')`) b.classList.add('active');
+  });
+  _filteredTickerList.sort((a, b) => {
+    if (key === 'da')      return (b.da_1w || 0) - (a.da_1w || 0);
+    if (key === 'name')    return a.ticker.localeCompare(b.ticker);
+    if (key === 'windows') return (b.n_windows_1w || 0) - (a.n_windows_1w || 0);
+    return 0;
+  });
+  renderTickerList();
+}
+
+function renderTickerList() {
+  const body = document.getElementById('ticker-list-body');
+  if (!body) return;
+
+  let html = `
+    <div class="ticker-list-cols">
+      <div>Ticker</div><div>Sector</div>
+      <div style="text-align:right">DA %</div>
+      <div style="text-align:right">Windows</div>
+      <div style="text-align:center">Tier</div>
+      <div style="text-align:right">Forward Test</div>
+    </div>`;
+
+  if (_filteredTickerList.length === 0) {
+    html += '<div style="padding:20px;color:var(--text-muted);text-align:center">No tickers found</div>';
+    body.innerHTML = html;
+    return;
+  }
+
+  _filteredTickerList.forEach(ticker => {
+    const da      = ticker.da_1w || 0;
+    const daStr   = (da * 100).toFixed(1) + '%';
+    const daClass = da >= 0.60 ? 'strong' : da >= 0.52 ? 'mid' : 'weak';
+    const n       = ticker.n_windows_1w || 0;
+    let tierHtml  = '';
+    if (ticker.tier === 'significant_edge') {
+      tierHtml = '<span class="tier-badge significant">Edge</span>';
+    } else if (ticker.tier === 'candidate') {
+      tierHtml = '<span class="tier-badge candidate">Cand.</span>';
+    } else {
+      tierHtml = '<span class="tier-badge weak">Weak</span>';
+    }
+    const fwdHtml = ticker.forward_test_active
+      ? '<span class="tr-fwd active">● ACTIVE</span>'
+      : '<span class="tr-fwd inactive">○ Inactive</span>';
+    let predStr = '';
+    if (ticker.last_prediction) {
+      const dir = ticker.last_prediction.direction;
+      predStr = dir === 'up' ? ' ↑' : dir === 'down' ? ' ↓' : '';
+    }
+    html += `
+      <div class="ticker-row" onclick="selectTickerFromList('${ticker.ticker}')">
+        <div class="tr-ticker">${ticker.ticker}${predStr}</div>
+        <div class="tr-name">${ticker.sector || ''}</div>
+        <div class="tr-da ${daClass}">${daStr}</div>
+        <div class="tr-windows">${n}</div>
+        <div class="tr-badge">${tierHtml}</div>
+        ${fwdHtml}
+      </div>`;
+  });
+
+  body.innerHTML = html;
+}
+
+function selectTickerFromList(tickerSymbol) {
+  const ticker = (window.HUB_DATA.tickers || []).find(t => t.ticker === tickerSymbol);
+  if (!ticker) return;
+  STATE.selectedTicker = ticker;
+  STATE.level = 'TICKER';
+  updateBreadcrumb();
+  openTickerPanel(ticker);
+}
+
+function openTickerPanel(ticker) {
+  if (!ticker) return;
+  STATE.panelOpen = true;
+  const da      = ticker.da_1w || 0;
+  const daStr   = (da * 100).toFixed(1) + '%';
+  const detail  = ticker.detail || {};
+  const scores  = detail.scorer_snapshot || {};
+  const regimes = detail.regime_breakdown || {};
+  const yearly  = detail.yearly_breakdown || {};
+  const summary = detail.backtest_summary || {};
+  const csvPath = ticker.csv_path || null;
+  const lp      = ticker.last_prediction;
+
+  const tierLabel = ticker.tier === 'significant_edge' ? 'Significant Edge'
+                  : ticker.tier === 'candidate'         ? 'Candidate' : 'Weak';
+  const tierClass = ticker.tier === 'significant_edge' ? 'significant'
+                  : ticker.tier === 'candidate'         ? 'candidate' : 'weak';
+
+  const regimeRows = Object.entries(regimes).map(([name, r]) => {
+    const rda = parseFloat(r.da || 0);
+    const c   = rda >= 0.60 ? 'var(--success)' : rda >= 0.52 ? 'var(--warning)' : 'var(--danger)';
+    return `<tr><td style="text-transform:capitalize">${name.replace(/_/g,' ')}</td><td style="text-align:right">${r.n}</td><td style="text-align:right;color:${c}">${(rda*100).toFixed(1)}%</td></tr>`;
+  }).join('');
+
+  const yearRows = Object.entries(yearly).map(([yr, r]) => {
+    const yda = parseFloat(r.da || 0);
+    const c   = yda >= 0.60 ? 'var(--success)' : yda >= 0.52 ? 'var(--warning)' : 'var(--danger)';
+    return `<tr><td>${yr}</td><td style="text-align:right">${r.n}</td><td style="text-align:right;color:${c}">${(yda*100).toFixed(1)}%</td></tr>`;
+  }).join('');
+
+  const scorerNames  = ['momentum','value','growth','mean_reversion','macro','quality'];
+  const scorerLabels = { momentum:'Momentum', value:'Value', growth:'Growth', mean_reversion:'Mean Rev', macro:'Macro ⚠', quality:'Quality' };
+  const scorerBars   = scorerNames.map(s => {
+    const val = scores[s] !== undefined ? scores[s] : null;
+    const valStr = val !== null ? parseFloat(val).toFixed(0) : '—';
+    const pct    = val !== null ? parseFloat(val) : 0;
+    const color  = pct >= 65 ? 'var(--success)' : pct >= 45 ? 'var(--warning)' : 'var(--danger)';
+    return `<div style="margin-bottom:8px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:3px">
+        <span style="color:var(--text-muted)">${scorerLabels[s]}</span>
+        <span style="color:var(--text)">${valStr}/100</span>
+      </div>
+      <div style="height:4px;background:var(--border);border-radius:2px">
+        <div style="width:${pct}%;height:100%;background:${color};border-radius:2px"></div>
+      </div></div>`;
+  }).join('');
+
+  const csvLink = csvPath
+    ? `<a href="${csvPath}" download="${ticker.ticker}_backtest.csv"
+          style="display:block;margin-top:8px;padding:8px 12px;background:rgba(74,158,255,0.1);
+                 border:1px solid var(--border);border-radius:6px;color:var(--accent);
+                 text-decoration:none;font-size:13px;text-align:center">
+         ⬇ Download Full Backtest Data (CSV)</a>`
+    : '';
+
+  const predHtml = lp ? `
+    <div style="margin-bottom:16px">
+      <div class="panel-section-title">Last Prediction</div>
+      <div class="stat-row"><span class="stat-label">Direction</span>
+        <span class="stat-value" style="color:${lp.direction==='up'?'var(--success)':lp.direction==='down'?'var(--danger)':'var(--text-muted)'}">
+          ${lp.direction==='up'?'UP ↑':lp.direction==='down'?'DOWN ↓':'NEUTRAL'}</span></div>
+      <div class="stat-row"><span class="stat-label">Confidence</span><span class="stat-value">${lp.confidence||'—'}</span></div>
+      <div class="stat-row"><span class="stat-label">Composite</span><span class="stat-value">${lp.composite?(+lp.composite).toFixed(3):'—'}</span></div>
+      <div class="stat-row"><span class="stat-label">Date</span><span class="stat-value">${lp.created_at?lp.created_at.split('T')[0]:'—'}</span></div>
+    </div>` : '';
+
+  const html = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px">
+      <h2 style="margin:0;font-size:22px">${ticker.ticker}</h2>
+      <span class="tier-badge ${tierClass}">${tierLabel}</span>
+    </div>
+    <div style="font-size:12px;color:var(--text-muted);margin-bottom:16px">${ticker.sector||''} · ${ticker.universe_id||''}</div>
+
+    <div style="margin-bottom:16px">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+        <span style="font-size:13px;color:var(--text-muted)">Resource Yield (1w DA)</span>
+        <span style="font-size:18px;font-weight:700;color:${da>=0.60?'var(--success)':da>=0.52?'var(--warning)':'var(--danger)'}">${daStr}</span>
+      </div>
+      <div style="height:6px;background:var(--border);border-radius:3px">
+        <div style="width:${da*100}%;height:100%;background:${da>=0.60?'var(--success)':da>=0.52?'var(--warning)':'var(--danger)'};border-radius:3px"></div>
+      </div>
+    </div>
+
+    <div class="stat-row"><span class="stat-label">XP (correct calls)</span><span class="stat-value">${ticker.n_windows_1w?Math.round((ticker.da_1w||0)*ticker.n_windows_1w):'—'}</span></div>
+    <div class="stat-row"><span class="stat-label">Backtest Windows</span><span class="stat-value">${ticker.n_windows_1w||'—'}</span></div>
+    <div class="stat-row"><span class="stat-label">Forward Test</span><span class="stat-value" style="color:${ticker.forward_test_active?'var(--success)':'var(--text-muted)'}">${ticker.forward_test_active?'● ACTIVE':'○ Inactive'}</span></div>
+    ${summary.mean_actual_return!==undefined?`<div class="stat-row"><span class="stat-label">Mean Actual Return</span><span class="stat-value">${(summary.mean_actual_return*100).toFixed(2)}%</span></div>`:''}
+
+    ${Object.keys(scores).length>0?`
+    <div style="margin:16px 0">
+      <div class="panel-section-title">Scorers</div>
+      ${scorerBars}
+      <div style="font-size:10px;color:var(--text-muted);margin-top:4px">⚠ Macro scorer inactive — defaults to 50</div>
+    </div>`:`<div class="panel-section"><div class="panel-section-title">Scorers</div><p class="text-muted" style="font-size:11px">Run build_scored_windows.py to generate scorer data.</p></div>`}
+
+    ${predHtml}
+
+    ${regimeRows?`
+    <div style="margin-bottom:16px">
+      <div class="panel-section-title">DA by Market Regime</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <tr style="color:var(--text-muted)"><th style="text-align:left;padding:4px 0">Regime</th><th style="text-align:right;padding:4px 0">N</th><th style="text-align:right;padding:4px 0">DA</th></tr>
+        ${regimeRows}
+      </table>
+    </div>`:''}
+
+    ${yearRows?`
+    <div style="margin-bottom:16px">
+      <div class="panel-section-title">DA by Year</div>
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <tr style="color:var(--text-muted)"><th style="text-align:left;padding:4px 0">Year</th><th style="text-align:right;padding:4px 0">N</th><th style="text-align:right;padding:4px 0">DA</th></tr>
+        ${yearRows}
+      </table>
+    </div>`:''}
+
+    <div style="margin-bottom:16px">
+      <div class="panel-section-title">Upgrade Track</div>
+      <div style="padding:8px 12px;background:rgba(74,158,255,0.05);border-radius:6px;font-size:12px;color:var(--text-muted);text-align:center">
+        ${ticker.forward_test_active?'Already in Forward Test ✓':'Add to Forward Test (make change in Claude Code)'}
+      </div>
+    </div>
+
+    ${csvLink}
+
+    <div style="margin-top:16px;padding:10px;background:rgba(74,158,255,0.05);border-radius:6px;font-size:11px;color:var(--text-muted);line-height:1.5">
+      Navigate here on your phone.<br>Make edits in Claude Code on your computer.
+    </div>`;
+
+  openPanel(html);
 }
 
 // ══════════════════════════════════════════════════════════════════
