@@ -44,6 +44,8 @@ function loadAllData() {
 // ══════════════════════════════════════════════════════════════════
 // STATE
 // ══════════════════════════════════════════════════════════════════
+let dashboardData = null;
+
 const STATE = {
   level:           'GALAXY',   // GALAXY | AGENT_FINANCIAL | UNIVERSE | TICKER | AGENT_REACTIVE | BUILD_GUIDE
   selectedAgent:   null,
@@ -68,7 +70,7 @@ let W, H, CX, CY;
 function resizeCanvas() {
   DPR = window.devicePixelRatio || 1;
   W = window.innerWidth;
-  H = window.innerHeight;
+  H = window.innerHeight - 84; // subtract top bar (48px) + quick-nav (36px)
   CX = W / 2;
   CY = H / 2;
   canvas.width  = W * DPR;
@@ -509,6 +511,7 @@ function closePanel() {
   if (STATE.level === 'TICKER') {
     STATE.level = 'UNIVERSE';
     STATE.selectedTicker = null;
+    updateBreadcrumb();
   }
   if (STATE.level === 'AGENT_REACTIVE') {
     navigateTo('GALAXY');
@@ -659,37 +662,69 @@ function renderBuildGuideCard() {
 // ══════════════════════════════════════════════════════════════════
 // NAVIGATION
 // ══════════════════════════════════════════════════════════════════
+function updateBreadcrumb() {
+  const bc = document.getElementById('breadcrumb');
+  let html = '<span class="bc-link" onclick="navigateTo(\'GALAXY\')">Galaxy</span>';
+
+  if (STATE.level === 'DASHBOARD') {
+    html += ' › <span class="bc-current">Dashboard</span>';
+
+  } else if (STATE.level === 'AGENT_FINANCIAL' ||
+             STATE.level === 'UNIVERSE' ||
+             STATE.level === 'TICKER') {
+    html += ' › <span class="bc-link" onclick="navigateTo(\'AGENT_FINANCIAL\')">Financial Agent</span>';
+
+  } else if (STATE.level === 'AGENT_REACTIVE') {
+    const agent = HUB_DATA.agents[STATE.selectedAgent] || {};
+    const name  = agent.display_name || STATE.selectedAgent || 'Agent';
+    html += ' › <span class="bc-current">' + name + '</span>';
+
+  } else if (STATE.level === 'BUILD_GUIDE') {
+    html += ' › <span class="bc-current">Build Guide</span>';
+  }
+
+  if (STATE.level === 'UNIVERSE' || STATE.level === 'TICKER') {
+    const u = (HUB_DATA.universes || []).find(u => u.id === STATE.selectedUniverse);
+    const uName = u ? u.display_name : (STATE.selectedUniverse || '');
+    html += ' › <span class="bc-link" onclick="navigateTo(\'UNIVERSE\')">' + uName + '</span>';
+  }
+
+  if (STATE.level === 'TICKER' && STATE.selectedTicker) {
+    html += ' › <span class="bc-current">' + STATE.selectedTicker.ticker + '</span>';
+  }
+
+  bc.innerHTML = html;
+}
+
 function navigateTo(level, opts) {
+  if (STATE.transitioning) return;
   opts = opts || {};
   STATE.level = level;
   STATE.transitioning = false;
   STATE.zoomTarget = null;
 
   document.getElementById('btn-back').classList.toggle('hidden', level === 'GALAXY');
-
-  const bc = document.getElementById('breadcrumb');
   const st = document.getElementById('status-text');
 
   if (level === 'GALAXY') {
-    bc.textContent = 'Galaxy';
-    st.textContent = `${Object.keys(HUB_DATA.agents).length} agents`;
-    closePanel();
-    STATE.selectedAgent = null;
+    STATE.selectedAgent    = null;
     STATE.selectedUniverse = null;
-    STATE.selectedTicker = null;
+    STATE.selectedTicker   = null;
+    closePanel();
+    st.textContent = `${Object.keys(HUB_DATA.agents).length} agents`;
 
   } else if (level === 'AGENT_FINANCIAL') {
-    STATE.selectedAgent = 'financial-analysis-agent';
+    STATE.selectedAgent    = 'financial-analysis-agent';
+    STATE.selectedUniverse = null;
+    STATE.selectedTicker   = null;
     buildUnivPlanets();
-    bc.textContent = 'Galaxy › Financial Analysis Agent';
     st.textContent = `${HUB_DATA.planetData.length} universes`;
 
   } else if (level === 'UNIVERSE') {
     const uid = opts.universeId || STATE.selectedUniverse;
     STATE.selectedUniverse = uid;
+    STATE.selectedTicker   = null;
     buildTickerPlanets(uid);
-    const udata = (HUB_DATA.universes || []).find(u => u.id === uid) || {};
-    bc.textContent = `Galaxy › Financial Agent › ${udata.display_name || uid}`;
     const n = tickerPlanets.length;
     st.textContent = `${n} tickers`;
 
@@ -703,15 +738,41 @@ function navigateTo(level, opts) {
     const aid = opts.agentId;
     STATE.selectedAgent = aid;
     const agent = HUB_DATA.agents[aid] || {};
-    bc.textContent = `Galaxy › ${agent.display_name || aid}`;
     st.textContent = `${(agent.functions || []).length} functions`;
     openPanel(renderReactivePanel(aid));
 
   } else if (level === 'BUILD_GUIDE') {
-    bc.textContent = 'Galaxy › Build Guide';
     st.textContent = 'v3';
     openPanel(renderBuildGuideCard());
+
+  } else if (level === 'DASHBOARD') {
+    st.textContent = 'Dashboard';
+    showDashboard();
   }
+
+  updateBreadcrumb();
+}
+
+// ══════════════════════════════════════════════════════════════════
+// DASHBOARD
+// ══════════════════════════════════════════════════════════════════
+function showDashboard() {
+  const panel = document.getElementById('dashboard-panel');
+  if (panel) {
+    panel.classList.remove('hidden');
+    showDashTab('overview');
+  }
+}
+
+function hideDashboard() {
+  const panel = document.getElementById('dashboard-panel');
+  if (panel) panel.classList.add('hidden');
+}
+
+// showDashTab is implemented in Phase 3
+function showDashTab(tab) {
+  const content = document.getElementById('dashboard-content');
+  if (content) content.innerHTML = '<p style="color:var(--text-muted);padding:20px">Dashboard loading…</p>';
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -785,6 +846,15 @@ canvas.addEventListener('touchend', e => {
 }, { passive: false });
 
 function handleClick(x, y) {
+  // Center hub click in GALAXY level → open dashboard
+  if (STATE.level === 'GALAXY') {
+    const dcx = x - CX, dcy = y - CY;
+    if (dcx * dcx + dcy * dcy <= 28 * 28) {
+      showDashboard();
+      return;
+    }
+  }
+
   const hit = hitTest(x, y);
   if (!hit) return;
 
@@ -995,6 +1065,11 @@ function draw() {
 function init() {
   resizeCanvas();
   initStars();
+
+  fetch('./data/dashboard.json')
+    .then(r => r.json())
+    .then(d => { dashboardData = d; })
+    .catch(() => { dashboardData = null; });
 
   loadAllData().then(() => {
     buildGalaxyPlanets();
