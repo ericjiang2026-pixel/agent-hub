@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-18T18:11:25.069717+00:00",
+  "methodology": {
+    "backtesting": "Walk-forward validation. For each ticker, we train on 252 days of price history, then test predictions on the next 21 days. We step forward 7 days and repeat. This avoids look-ahead bias — the model never sees future data during training.",
+    "directional_accuracy": "We predict UP (if Monte Carlo win rate > 55%), DOWN (< 45%), or NEUTRAL. DA measures how often UP/DOWN predictions are correct, excluding neutrals.",
+    "monte_carlo": "We run 30 seeds × 750 simulated price paths using historical volatility. The average win rate across seeds feeds into the composite score.",
+    "composite_score": "Average of 4 components: (1) data completeness — how much price/fundamental data was available, (2) scorer agreement — how much the 6 scorers agree, (3) Monte Carlo win rate, (4) historical calibration — past accuracy on this ticker. Range 0-1.",
+    "confidence_buckets": "High > 0.70, Medium 0.40-0.70, Low < 0.40.",
+    "forward_testing": "Each day at 9:35am ET, we run the full pipeline on 39 tickers and store predictions. After 21 calendar days, we fetch the actual price and record whether we were right.",
+    "tiers": "Significant edge: DA >= 60% with 10+ windows. Candidate: DA >= 55% with 5+ windows. Weak: below threshold."
+  },
+  "data_sources": {
+    "price_ohlcv": "yfinance Python library. Free, no API key required. Daily OHLCV going back to 2018.",
+    "fundamentals": "yfinance Ticker.info. Provides P/E ratio, P/B ratio, ROE, debt-to-equity, gross margin, revenue growth, earnings growth, market cap, FCF yield.",
+    "macro": "FRED API (St. Louis Fed). Currently NOT active — no API key configured. Macro scorer defaults to 50/100. To activate: set FRED_API_KEY environment variable.",
+    "backtest_db": "SQLite database at financial-analysis-agent/data/financial_analysis.db. Contains 1,389,731 backtest windows across 434 tickers and 16 industries."
+  },
+  "scorers": {
+    "momentum": "0-100. Based on RSI (14), MACD histogram, price vs 50/200-day moving averages, volume ratio. High score = strong upward momentum.",
+    "value": "0-100. Based on P/E ratio, P/B ratio, P/S ratio, FCF yield. High score = stock is cheap relative to fundamentals.",
+    "growth": "0-100. Based on revenue growth YoY, earnings growth YoY, gross margin. High score = strong and accelerating growth.",
+    "mean_reversion": "0-100. Based on Bollinger Band position, distance from 200-day MA, RSI extremes. High score = stock is oversold and likely to bounce.",
+    "macro": "0-100. Based on yield curve (10Y-2Y spread), 10-year treasury rate, unemployment rate. CURRENTLY INACTIVE — defaults to 50.",
+    "quality": "0-100. Based on ROE, operating margin, debt-to-equity, market cap. High score = high-quality business."
+  },
+  "known_limitations": [
+    "Macro scorer is inactive (no FRED API key). All macro scores are 50/100.",
+    "Fundamental data (P/E, ROE etc) is fetched live, not point-in-time. This may introduce slight look-ahead bias in fundamental scorers.",
+    "Only GE passes all statistical gates (bootstrap CI + permutation test). All other tickers are in training mode.",
+    "Forward-test predictions have 21-day horizon. No predictions have resolved yet — accuracy is based on backtest only.",
+    "Very short (1-2 day) and short (2-5 day) intervals produce only neutral signals — Monte Carlo win rates cluster too tightly around 50% to breach the threshold."
+  ],
+  "backtest_stats": {
+    "total_windows": 61962,
+    "total_tickers": 434,
+    "total_universes": 16,
+    "date_range": "2018-01-01 to 2026-01-01",
+    "best_ticker_1w": "SPOT",
+    "best_da_1w": 0.6724,
+    "mean_da_1w": 0.4597,
+    "forward_test_predictions": 61
+  }
+}
