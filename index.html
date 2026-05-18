@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Full-viewport canvas -->
+  <canvas id="galaxy"></canvas>
+
+  <!-- Top bar -->
+  <header id="top-bar">
+    <span class="hub-title">⬡ Agent Hub</span>
+    <nav id="breadcrumb">Galaxy</nav>
+    <div class="top-right">
+      <button id="btn-refresh" title="Refresh data">↻ Refresh</button>
+      <span id="last-updated" class="text-muted"></span>
+    </div>
+  </header>
+
+  <!-- Bottom bar -->
+  <footer id="bottom-bar">
+    <button id="btn-back" class="hidden">‹ Back</button>
+    <span id="status-text" class="text-muted">Loading…</span>
+    <span class="hint text-muted">Tap planet to explore</span>
+  </footer>
+
+  <!-- Side panel -->
+  <aside id="side-panel" class="panel-hidden">
+    <button id="panel-close">×</button>
+    <div id="panel-content"></div>
+  </aside>
+
+  <!-- Welcome modal -->
+  <div id="modal-overlay" class="hidden">
+    <div id="welcome-modal">
+      <h2 id="modal-title">Welcome to Agent Hub</h2>
+      <p id="modal-stats"></p>
+      <p class="text-muted modal-note">Navigate on your phone · Make changes on your computer</p>
+      <button id="modal-close">Enter Hub</button>
+    </div>
+  </div>
+
+  <!-- Error toast -->
+  <div id="toast" class="hidden"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>

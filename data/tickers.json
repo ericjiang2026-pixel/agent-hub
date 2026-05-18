@@ -1,0 +1,4612 @@
+[
+  {
+    "ticker": "SPOT",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.6724,
+    "n_windows_1w": 116,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7303,
+      "created_at": "2026-05-18T07:11:23.800996+00:00"
+    }
+  },
+  {
+    "ticker": "MNTS",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.6325,
+    "n_windows_1w": 117,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6956,
+      "created_at": "2026-05-18T07:11:26.757349+00:00"
+    }
+  },
+  {
+    "ticker": "BIIB",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.6102,
+    "n_windows_1w": 118,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7062,
+      "created_at": "2026-05-18T07:11:29.630962+00:00"
+    }
+  },
+  {
+    "ticker": "BMY",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.6063,
+    "n_windows_1w": 127,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6791,
+      "created_at": "2026-05-18T07:11:32.912825+00:00"
+    }
+  },
+  {
+    "ticker": "XLC",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.6063,
+    "n_windows_1w": 127,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6562,
+      "created_at": "2026-05-18T07:11:36.339893+00:00"
+    }
+  },
+  {
+    "ticker": "ALGT",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.6,
+    "n_windows_1w": 125,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6465,
+      "created_at": "2026-05-18T07:11:39.292719+00:00"
+    }
+  },
+  {
+    "ticker": "FMC",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.6,
+    "n_windows_1w": 120,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6803,
+      "created_at": "2026-05-18T07:11:42.145434+00:00"
+    }
+  },
+  {
+    "ticker": "LUMN",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.6,
+    "n_windows_1w": 125,
+    "tier": "significant_edge",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6948,
+      "created_at": "2026-05-18T07:11:45.012735+00:00"
+    }
+  },
+  {
+    "ticker": "CRM",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.5984,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6883,
+      "created_at": "2026-05-18T07:11:47.902606+00:00"
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5984,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7312,
+      "created_at": "2026-05-18T07:11:50.866324+00:00"
+    }
+  },
+  {
+    "ticker": "ZETA",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5982,
+    "n_windows_1w": 112,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7129,
+      "created_at": "2026-05-18T07:11:53.662900+00:00"
+    }
+  },
+  {
+    "ticker": "META",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5966,
+    "n_windows_1w": 119,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6591,
+      "created_at": "2026-05-18T07:11:56.472889+00:00"
+    }
+  },
+  {
+    "ticker": "GE",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.595,
+    "n_windows_1w": 121,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6717,
+      "created_at": "2026-05-18T07:11:59.412813+00:00"
+    }
+  },
+  {
+    "ticker": "NFLX",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5935,
+    "n_windows_1w": 123,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.726,
+      "created_at": "2026-05-18T07:12:02.687780+00:00"
+    }
+  },
+  {
+    "ticker": "THC",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5906,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6488,
+      "created_at": "2026-05-18T07:12:05.717636+00:00"
+    }
+  },
+  {
+    "ticker": "TROX",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5887,
+    "n_windows_1w": 124,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.667,
+      "created_at": "2026-05-18T07:12:08.654951+00:00"
+    }
+  },
+  {
+    "ticker": "MCK",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5859,
+    "n_windows_1w": 128,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6082,
+      "created_at": "2026-05-18T07:12:11.505223+00:00"
+    }
+  },
+  {
+    "ticker": "XRAY",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.584,
+    "n_windows_1w": 125,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6117,
+      "created_at": "2026-05-18T07:12:14.316077+00:00"
+    }
+  },
+  {
+    "ticker": "DOT-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5812,
+    "n_windows_1w": 191,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.5813,
+      "created_at": "2026-05-18T07:12:17.296063+00:00"
+    }
+  },
+  {
+    "ticker": "BSX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5794,
+    "n_windows_1w": 107,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.607,
+      "created_at": "2026-05-18T07:12:20.061056+00:00"
+    }
+  },
+  {
+    "ticker": "APA",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.5748,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7702,
+      "created_at": "2026-05-18T07:12:23.017400+00:00"
+    }
+  },
+  {
+    "ticker": "NEM",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5738,
+    "n_windows_1w": 122,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6395,
+      "created_at": "2026-05-18T07:12:25.911261+00:00"
+    }
+  },
+  {
+    "ticker": "HCA",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5726,
+    "n_windows_1w": 117,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6065,
+      "created_at": "2026-05-18T07:12:28.753634+00:00"
+    }
+  },
+  {
+    "ticker": "BOTZ",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5678,
+    "n_windows_1w": 118,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6579,
+      "created_at": "2026-05-18T07:12:32.166853+00:00"
+    }
+  },
+  {
+    "ticker": "MU",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5678,
+    "n_windows_1w": 118,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7472,
+      "created_at": "2026-05-18T07:12:35.218458+00:00"
+    }
+  },
+  {
+    "ticker": "SOXX",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5656,
+    "n_windows_1w": 122,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7309,
+      "created_at": "2026-05-18T07:12:38.044821+00:00"
+    }
+  },
+  {
+    "ticker": "WING",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.5645,
+    "n_windows_1w": 124,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6132,
+      "created_at": "2026-05-18T07:12:41.028968+00:00"
+    }
+  },
+  {
+    "ticker": "GS",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.5635,
+    "n_windows_1w": 126,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7149,
+      "created_at": "2026-05-18T07:12:43.847682+00:00"
+    }
+  },
+  {
+    "ticker": "BLNK",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.563,
+    "n_windows_1w": 119,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7169,
+      "created_at": "2026-05-18T07:12:46.626742+00:00"
+    }
+  },
+  {
+    "ticker": "HOLX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5625,
+    "n_windows_1w": 112,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7145,
+      "created_at": "2026-05-18T07:12:49.383681+00:00"
+    }
+  },
+  {
+    "ticker": "AXON",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.561,
+    "n_windows_1w": 123,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6565,
+      "created_at": "2026-05-18T07:12:52.255710+00:00"
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.56,
+    "n_windows_1w": 125,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7468,
+      "created_at": "2026-05-18T07:12:55.142864+00:00"
+    }
+  },
+  {
+    "ticker": "PH",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.5583,
+    "n_windows_1w": 120,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6498,
+      "created_at": "2026-05-18T07:12:58.012906+00:00"
+    }
+  },
+  {
+    "ticker": "SMH",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5574,
+    "n_windows_1w": 122,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7089,
+      "created_at": "2026-05-18T07:13:00.782659+00:00"
+    }
+  },
+  {
+    "ticker": "ETN",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.5556,
+    "n_windows_1w": 117,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7232,
+      "created_at": "2026-05-18T07:13:03.966713+00:00"
+    }
+  },
+  {
+    "ticker": "IVV",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5512,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7011,
+      "created_at": "2026-05-18T07:13:07.193574+00:00"
+    }
+  },
+  {
+    "ticker": "UHS",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5512,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6137,
+      "created_at": "2026-05-18T07:13:10.254848+00:00"
+    }
+  },
+  {
+    "ticker": "VOO",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5512,
+    "n_windows_1w": 127,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7011,
+      "created_at": "2026-05-18T07:13:13.100491+00:00"
+    }
+  },
+  {
+    "ticker": "WELL",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.5505,
+    "n_windows_1w": 109,
+    "tier": "candidate",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6795,
+      "created_at": "2026-05-18T07:13:15.990250+00:00"
+    }
+  },
+  {
+    "ticker": "CW",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5492,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SPY",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5476,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WBD",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.547,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AVGO",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5469,
+    "n_windows_1w": 128,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7823181683243292,
+      "created_at": "2026-05-17T07:25:39.211039+00:00"
+    }
+  },
+  {
+    "ticker": "EXAS",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.5469,
+    "n_windows_1w": 128,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EL",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.5447,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GSAT",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5433,
+    "n_windows_1w": 127,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALLT",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.542,
+    "n_windows_1w": 131,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TMDX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.541,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DLR",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.5405,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TTD",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5397,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALB",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5385,
+    "n_windows_1w": 130,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DRS",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5378,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LPSN",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5372,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VTI",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.536,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "POL-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5341,
+    "n_windows_1w": 88,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6974227914917672,
+      "created_at": "2026-05-17T07:25:30.507662+00:00"
+    }
+  },
+  {
+    "ticker": "ATOM-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.534,
+    "n_windows_1w": 191,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LTC-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.533,
+    "n_windows_1w": 182,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AA",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5317,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SPCE",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.531,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HAL",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.5299,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ILMN",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.5299,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "T",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5299,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BAC",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.5294,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SMCI",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5283,
+    "n_windows_1w": 106,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MS",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.528,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CMCSA",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5246,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SPG",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.5246,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KTOS",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5221,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MSFT",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.5217,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ETH-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5215,
+    "n_windows_1w": 186,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AMAT",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.521,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TDOC",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.521,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DOGE-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5208,
+    "n_windows_1w": 192,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RCKT",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.5207,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6761549652802864,
+      "created_at": "2026-05-17T07:25:47.152126+00:00"
+    }
+  },
+  {
+    "ticker": "RMBS",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5207,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "C",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.52,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "QQQ",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.52,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BAX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5197,
+    "n_windows_1w": 127,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ADA-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5185,
+    "n_windows_1w": 189,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MP",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5182,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AVAX-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5179,
+    "n_windows_1w": 195,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GLD",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5172,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IAU",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5172,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UBER",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.5167,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ACWI",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5161,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BWXT",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5161,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CHTR",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5159,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "JPM",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.5159,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6849688598116244,
+      "created_at": "2026-05-17T07:25:57.537614+00:00"
+    }
+  },
+  {
+    "ticker": "LRCX",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5135,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RBLX",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5135,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ATRO",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5128,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FTNT",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.5128,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "OMC",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5126,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XPO",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.5124,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DG",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.5122,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EFA",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5122,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NOW",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.5122,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RKLB",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5122,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RCL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.512,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FOLD",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.5115,
+    "n_windows_1w": 131,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6654928943503955,
+      "created_at": "2026-05-17T07:26:11.221504+00:00"
+    }
+  },
+  {
+    "ticker": "LDOS",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5113,
+    "n_windows_1w": 133,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DXCM",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5085,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BLK",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.5079,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GD",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5079,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MTCH",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5079,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BCH-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.5053,
+    "n_windows_1w": 188,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AMWL",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5043,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AAPL",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.5042,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ARKK",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5042,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RTX",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5042,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MRK",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.5041,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IFF",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.504,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NVST",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.504,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NKE",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.5039,
+    "n_windows_1w": 129,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ASGN",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.5,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CDE",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CDLX",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.5,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CRUS",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.5,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PRCT",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.5,
+    "n_windows_1w": 94,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VEA",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.5,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WPM",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.5,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AMD",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.496,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FOX",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4959,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AVNT",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4958,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AVB",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4957,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DLTR",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4956,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SOL-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.4945,
+    "n_windows_1w": 182,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DIS",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4921,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ISRG",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4921,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CF",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4917,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PSN",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4917,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FOXA",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4915,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LYFT",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4915,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EQT",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4912,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IEMG",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4911,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BKR",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.488,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IAC",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4876,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SITM",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4876,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALGN",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4874,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ICLN",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4874,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "STLD",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4872,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CEVA",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.487,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ESE",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.487,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ROST",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4867,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TMUS",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4867,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HEI",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4862,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BTC-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.4845,
+    "n_windows_1w": 194,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ADBE",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4836,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DVN",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4833,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CACI",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4831,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DDOG",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4831,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AR",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4828,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UUUU",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4828,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CTRA",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4825,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EQR",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4825,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "D",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.4818,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6994276892107784,
+      "created_at": "2026-05-17T07:25:41.314310+00:00"
+    }
+  },
+  {
+    "ticker": "VSAT",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4815,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TWLO",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4803,
+    "n_windows_1w": 127,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CAT",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4797,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLK",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4797,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CHRW",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4793,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PHR",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4793,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ENTG",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.479,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ECL",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4786,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TDG",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4783,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EEM",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4775,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MTRN",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4775,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MRNA",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4762,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SRRK",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4758,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "U",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4758,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AXP",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4746,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CL",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4746,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MTD",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4746,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NWSA",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4746,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLF",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4746,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "A",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4732,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BAH",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4732,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DNN",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4732,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MRCY",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4722,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "OSK",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4715,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NI",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.4712,
+    "n_windows_1w": 104,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.765581256305552,
+      "created_at": "2026-05-17T07:25:32.517445+00:00"
+    }
+  },
+  {
+    "ticker": "HIMS",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4711,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LHX",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4711,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ITW",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4706,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ROBO",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4706,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MTB",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4696,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PNC",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4696,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EXK",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.469,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ON",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4685,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HII",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4677,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RARE",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4672,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BNB-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.467,
+    "n_windows_1w": 182,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LINK-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.4643,
+    "n_windows_1w": 168,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CNC",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4636,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IRM",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4636,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7713400123600875,
+      "created_at": "2026-05-17T07:25:36.410116+00:00"
+    }
+  },
+  {
+    "ticker": "MGNI",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4634,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CENX",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4628,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TSLA",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4628,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DOCS",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4624,
+    "n_windows_1w": 93,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALGM",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4622,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CRL",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4622,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MDB",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4622,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AG",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4615,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TJX",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4615,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EW",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4609,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ZS",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4609,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ARKG",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4603,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "COST",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4597,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.7520621152961114,
+      "created_at": "2026-05-17T07:25:52.947414+00:00"
+    }
+  },
+  {
+    "ticker": "AMZN",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4595,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KEY",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4595,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MRVL",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4595,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CMC",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.459,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HUN",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4583,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SNOW",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4583,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VCIT",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4583,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LFST",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4579,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PSX",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4576,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MPC",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4569,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NET",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4569,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VLO",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4554,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TTWO",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4553,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IDXX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4545,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DIA",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4538,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CMG",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4531,
+    "n_windows_1w": 128,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GENI",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.453,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HL",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.453,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "QNST",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.453,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "OXY",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4522,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CLF",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4516,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SAIA",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4513,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AMT",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4508,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MDY",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4508,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CUK",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.45,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CAH",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4492,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NSC",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4488,
+    "n_windows_1w": 127,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SNPS",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4486,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ACAD",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4483,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "QCOM",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4483,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SWKS",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4483,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ORCL",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.448,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CSCO",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4464,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GILD",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4464,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WY",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4464,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KLAC",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4463,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TLT",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4463,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SIRI",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4455,
+    "n_windows_1w": 101,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "JOBY",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4454,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SHW",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4454,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLY",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4454,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WMT",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4435,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLI",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4435,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LOW",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4426,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "JNJ",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4417,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LUV",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4414,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WFC",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4414,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CDNS",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.4407,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LQD",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4407,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NYT",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4407,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MA",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4393,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SBUX",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.439,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SCHW",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.439,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FCX",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4386,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AES",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.438,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CCL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.438,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ARWR",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4375,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GWW",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.437,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "USB",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.437,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WERN",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4369,
+    "n_windows_1w": 103,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CCI",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4365,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ELV",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4364,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "COF",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4359,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HBAN",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4359,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HSIC",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4359,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MOS",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4348,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ZM",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4336,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TXN",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4324,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LLY",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4322,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6804786833162071,
+      "created_at": "2026-05-17T07:25:43.328364+00:00"
+    }
+  },
+  {
+    "ticker": "GOLD",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.432,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LH",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.432,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RSP",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.432,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SNCY",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4312,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VZ",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4312,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KALU",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.431,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NUE",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.431,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SCCO",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.431,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MPWR",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4299,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EQIX",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4298,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TGT",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4298,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HD",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4286,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "neutral",
+      "confidence": "Medium",
+      "composite": 0.5252212780023542,
+      "created_at": "2026-05-17T07:26:13.361641+00:00"
+    }
+  },
+  {
+    "ticker": "IJR",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4286,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UNI-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.4275,
+    "n_windows_1w": 138,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IWM",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4274,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PPG",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4274,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "QRVO",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4274,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FANG",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4261,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FWRD",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4261,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HAE",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4261,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "JBLU",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4259,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CI",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.425,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MRTN",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4248,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "COP",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4237,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLV",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4237,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EXPD",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4231,
+    "n_windows_1w": 104,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HALO",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4228,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "REGN",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4228,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UAL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4228,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DAL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4224,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RF",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.422,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CLOU",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4215,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NCLH",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4211,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KRO",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.418,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XOM",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4175,
+    "n_windows_1w": 103,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PSA",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4174,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EMN",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4167,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "J",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4167,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RPM",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4167,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FITB",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4158,
+    "n_windows_1w": 101,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "INSP",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4153,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LIN",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4151,
+    "n_windows_1w": 106,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "V",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4151,
+    "n_windows_1w": 106,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XRP-USD",
+    "universe_id": "global_large_cap_crypto",
+    "sector": "Crypto",
+    "da_1w": 0.4148,
+    "n_windows_1w": 176,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TRMK",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4146,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PUBM",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4138,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ROK",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4138,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BA",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4132,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AGG",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4118,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BAND",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4118,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PFE",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4118,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EMR",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4113,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SBAC",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.4113,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HYG",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4112,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AAL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4103,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MCHP",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4087,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLB",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4087,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VEEV",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4074,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BND",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4068,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KO",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.4068,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ATI",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4065,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WMG",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4065,
+    "n_windows_1w": 123,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "WAT",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.4054,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "APPS",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4048,
+    "n_windows_1w": 126,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BRZE",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4045,
+    "n_windows_1w": 89,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TFC",
+    "universe_id": "us_financials",
+    "sector": "Financials",
+    "da_1w": 0.4037,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ACHR",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.4035,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EXC",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.4035,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MMM",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4035,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PAAS",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.4035,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "LSCC",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.4034,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SLB",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4034,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6911981774807461,
+      "created_at": "2026-05-17T07:26:15.422246+00:00"
+    }
+  },
+  {
+    "ticker": "GXO",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4019,
+    "n_windows_1w": 107,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EOG",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.4018,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VRTX",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.4017,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ED",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.4,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FDX",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.4,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ODFL",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.4,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SNAP",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.4,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLP",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.4,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CRWD",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.3983,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DV",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.3982,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PKE",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.3982,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "GRAB",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3981,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RRC",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.3981,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "EA",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.3967,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "RXO",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3966,
+    "n_windows_1w": 58,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SAIC",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.3966,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ETR",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3964,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "High",
+      "composite": 0.8072842713196049,
+      "created_at": "2026-05-17T07:25:34.433227+00:00"
+    }
+  },
+  {
+    "ticker": "PPL",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3964,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SLAB",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.3964,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "APD",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.3952,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PODD",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3932,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLE",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3932,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLRE",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3932,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DE",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.3929,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UNH",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3929,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PG",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.3917,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XEL",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3917,
+    "n_windows_1w": 120,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CVX",
+    "universe_id": "us_energy",
+    "sector": "Energy",
+    "da_1w": 0.3906,
+    "n_windows_1w": 128,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6700308041216583,
+      "created_at": "2026-05-17T07:26:07.007662+00:00"
+    }
+  },
+  {
+    "ticker": "LMT",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.3898,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PLD",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.3898,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALK",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3894,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "INTU",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.3889,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TDY",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.3879,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VTR",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.3876,
+    "n_windows_1w": 129,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CNI",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3874,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DLB",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.386,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "KNX",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.386,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PINS",
+    "universe_id": "us_communication",
+    "sector": "Communication",
+    "da_1w": 0.386,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CVS",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3852,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MUB",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.384,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AXTA",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.3839,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HUBG",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3838,
+    "n_windows_1w": 99,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PANW",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.3818,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "FE",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3805,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PNW",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3793,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DBC",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3784,
+    "n_windows_1w": 111,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AIRT",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3782,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CSX",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.3782,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AEP",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.377,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AVAV",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.376,
+    "n_windows_1w": 125,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "AMGN",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.3739,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PCVX",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.3719,
+    "n_windows_1w": 121,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ASIX",
+    "universe_id": "us_materials",
+    "sector": "Materials",
+    "da_1w": 0.3717,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "IEF",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3717,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PDBC",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3717,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CMS",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3707,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "JBHT",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3707,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SO",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3697,
+    "n_windows_1w": 119,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UPS",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.3689,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ADI",
+    "universe_id": "us_semiconductors",
+    "sector": "Semiconductors",
+    "da_1w": 0.3654,
+    "n_windows_1w": 104,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "YUM",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.3652,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DGX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3636,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TFII",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3628,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "XLU",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3619,
+    "n_windows_1w": 105,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ABBV",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.3615,
+    "n_windows_1w": 130,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HON",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.3596,
+    "n_windows_1w": 114,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "TPVG",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.3578,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SLV",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.3571,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NEE",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3565,
+    "n_windows_1w": 115,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "STE",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3545,
+    "n_windows_1w": 110,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "NOC",
+    "universe_id": "us_aerospace_defense",
+    "sector": "Aerospace & Defense",
+    "da_1w": 0.354,
+    "n_windows_1w": 113,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BMRN",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.3525,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PEP",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.3524,
+    "n_windows_1w": 105,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "CP",
+    "universe_id": "us_transportation",
+    "sector": "Transportation",
+    "da_1w": 0.3486,
+    "n_windows_1w": 109,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "HUM",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3482,
+    "n_windows_1w": 112,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "ALNY",
+    "universe_id": "us_biotech",
+    "sector": "Biotech",
+    "da_1w": 0.3468,
+    "n_windows_1w": 124,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "PATH",
+    "universe_id": "us_large_cap_tech",
+    "sector": "Technology",
+    "da_1w": 0.3398,
+    "n_windows_1w": 103,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "MCD",
+    "universe_id": "us_consumer",
+    "sector": "Consumer",
+    "da_1w": 0.339,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "O",
+    "universe_id": "us_real_estate",
+    "sector": "Real Estate",
+    "da_1w": 0.339,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "DUK",
+    "universe_id": "us_utilities",
+    "sector": "Utilities",
+    "da_1w": 0.3361,
+    "n_windows_1w": 122,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "UNP",
+    "universe_id": "us_industrials",
+    "sector": "Industrials",
+    "da_1w": 0.3305,
+    "n_windows_1w": 118,
+    "tier": "weak",
+    "forward_test_active": true,
+    "last_prediction": {
+      "direction": "up",
+      "confidence": "Medium",
+      "composite": 0.6673177602024305,
+      "created_at": "2026-05-17T07:26:09.097383+00:00"
+    }
+  },
+  {
+    "ticker": "GEHC",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3279,
+    "n_windows_1w": 61,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "BDX",
+    "universe_id": "us_healthcare_services",
+    "sector": "Healthcare",
+    "da_1w": 0.3241,
+    "n_windows_1w": 108,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "VGSH",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.2069,
+    "n_windows_1w": 116,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  },
+  {
+    "ticker": "SHY",
+    "universe_id": "us_etfs",
+    "sector": "ETFs",
+    "da_1w": 0.1966,
+    "n_windows_1w": 117,
+    "tier": "weak",
+    "forward_test_active": false,
+    "last_prediction": null
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "id": "email-agent",
+  "display_name": "Email Agent",
+  "type": "reactive",
+  "category": "reactive-communication",
+  "status": "live",
+  "version": "1.0.0",
+  "description": "Drafts email replies. Never sends. Learns from edits.",
+  "functions": [
+    {
+      "id": "triage",
+      "label": "Triage",
+      "description": "Decide if email needs a response or can be ignored"
+    },
+    {
+      "id": "draft",
+      "label": "Draft",
+      "description": "Write reply in user's tone"
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "description": "Absorb edits as permanent rules"
+    }
+  ],
+  "stats": {
+    "edits_logged": 0,
+    "patterns_promoted": 0,
+    "style_samples": 0
+  },
+  "color": "#4A9EFF",
+  "icon": "✉"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "financial-analysis-agent",
+  "display_name": "Financial Analysis Agent",
+  "type": "analytical",
+  "category": "analytical-research",
+  "status": "live",
+  "version": "1.0.0",
+  "description": "Evaluates stocks, ETFs, crypto. 1,389,731 backtest windows.",
+  "color": "#F39C12",
+  "icon": "📈",
+  "stats": {
+    "total_backtest_windows": 1389731,
+    "unique_tickers": 434,
+    "forward_test_candidates": 39,
+    "mean_da_1w": 0.4597,
+    "proven_tier_count": 8
+  },
+  "top_tickers": [
+    {
+      "ticker": "SPOT",
+      "da": 0.6724,
+      "universe": "us_communication"
+    },
+    {
+      "ticker": "MNTS",
+      "da": 0.6325,
+      "universe": "us_aerospace_defense"
+    },
+    {
+      "ticker": "BIIB",
+      "da": 0.6102,
+      "universe": "us_biotech"
+    },
+    {
+      "ticker": "BMY",
+      "da": 0.6063,
+      "universe": "us_biotech"
+    },
+    {
+      "ticker": "XLC",
+      "da": 0.6063,
+      "universe": "us_etfs"
+    }
+  ]
+}

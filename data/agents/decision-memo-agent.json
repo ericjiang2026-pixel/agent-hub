@@ -1,0 +1,31 @@
+{
+  "id": "decision-memo-agent",
+  "display_name": "Decision Memo Agent",
+  "type": "reactive",
+  "category": "decision-support",
+  "status": "live",
+  "version": "1.0.0",
+  "description": "Produces decision memos. Three memo types.",
+  "functions": [
+    {
+      "id": "strategic",
+      "label": "Strategic Memo",
+      "description": "Structured analysis for high-stakes strategic choices"
+    },
+    {
+      "id": "tactical",
+      "label": "Tactical Memo",
+      "description": "Rapid decision write-up for operational choices"
+    },
+    {
+      "id": "interpersonal",
+      "label": "Interpersonal Memo",
+      "description": "Framing for people / relationship decisions"
+    }
+  ],
+  "stats": {
+    "memos_produced": 0
+  },
+  "color": "#E67E22",
+  "icon": "📋"
+}

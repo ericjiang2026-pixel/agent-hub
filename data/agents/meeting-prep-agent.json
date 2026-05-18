@@ -1,0 +1,37 @@
+{
+  "id": "meeting-prep-agent",
+  "display_name": "Meeting Prep Agent",
+  "type": "reactive",
+  "category": "meeting-support",
+  "status": "live",
+  "version": "1.0.0",
+  "description": "Prepares meeting briefs and captures live notes.",
+  "functions": [
+    {
+      "id": "classify",
+      "label": "Classify",
+      "description": "Categorise meeting type and stakeholders"
+    },
+    {
+      "id": "prep_doc",
+      "label": "Prep Doc",
+      "description": "Generate structured pre-meeting brief"
+    },
+    {
+      "id": "live_notes",
+      "label": "Live Notes",
+      "description": "Capture decisions and action items during meeting"
+    },
+    {
+      "id": "followup",
+      "label": "Follow-up",
+      "description": "Draft follow-up email from meeting notes"
+    }
+  ],
+  "stats": {
+    "meetings_prepped": 0,
+    "follow_ups_drafted": 0
+  },
+  "color": "#9B59B6",
+  "icon": "📅"
+}

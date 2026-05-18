@@ -1,0 +1,32 @@
+{
+  "id": "text-agent",
+  "display_name": "Text Agent",
+  "type": "reactive",
+  "category": "reactive-communication",
+  "status": "live",
+  "version": "1.0.0",
+  "description": "Drafts text message replies. Learns tone per contact.",
+  "functions": [
+    {
+      "id": "triage_gate",
+      "label": "Triage Gate",
+      "description": "Decide if text needs a reply (two-step gate)"
+    },
+    {
+      "id": "formality",
+      "label": "Formality",
+      "description": "Classify tone: casual / semi-formal / formal"
+    },
+    {
+      "id": "draft",
+      "label": "Draft",
+      "description": "Write reply matched to sender's tone"
+    }
+  ],
+  "stats": {
+    "texts_triaged": 0,
+    "drafts_produced": 0
+  },
+  "color": "#2ECC71",
+  "icon": "💬"
+}

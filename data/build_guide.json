@@ -1,0 +1,16 @@
+{
+  "id": "build-guide",
+  "display_name": "Build Guide",
+  "type": "build_guide",
+  "description": "Operating manual for the agent ecosystem. Learns from every agent built.",
+  "color": "#FFFFFF",
+  "icon": "📖",
+  "template_version": "v3",
+  "agents_built": 5,
+  "known_gaps": 4,
+  "last_updated": "2026-05-17",
+  "branches": [
+    "Reactive Agents",
+    "Analytical Agents"
+  ]
+}

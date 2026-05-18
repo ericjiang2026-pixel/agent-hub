@@ -1,0 +1,162 @@
+[
+  {
+    "id": "global_large_cap_crypto",
+    "display_name": "Global Large Cap Crypto",
+    "sector": "Crypto",
+    "ticker_count": 15,
+    "mean_da_1w": 0.5013,
+    "best_ticker": "DOT-USD",
+    "best_da": 0.5812,
+    "color": "#E74C3C"
+  },
+  {
+    "id": "us_aerospace_defense",
+    "display_name": "Us Aerospace Defense",
+    "sector": "Aerospace Defense",
+    "ticker_count": 47,
+    "mean_da_1w": 0.4704,
+    "best_ticker": "MNTS",
+    "best_da": 0.6325,
+    "color": "#3498DB"
+  },
+  {
+    "id": "us_biotech",
+    "display_name": "Us Biotech",
+    "sector": "Biotechnology",
+    "ticker_count": 25,
+    "mean_da_1w": 0.455,
+    "best_ticker": "BIIB",
+    "best_da": 0.6102,
+    "color": "#2ECC71"
+  },
+  {
+    "id": "us_communication",
+    "display_name": "Us Communication",
+    "sector": "Communication",
+    "ticker_count": 48,
+    "mean_da_1w": 0.4875,
+    "best_ticker": "SPOT",
+    "best_da": 0.6724,
+    "color": "#9B59B6"
+  },
+  {
+    "id": "us_consumer",
+    "display_name": "Us Consumer",
+    "sector": "Consumer",
+    "ticker_count": 20,
+    "mean_da_1w": 0.4445,
+    "best_ticker": "EL",
+    "best_da": 0.5447,
+    "color": "#F39C12"
+  },
+  {
+    "id": "us_energy",
+    "display_name": "Us Energy",
+    "sector": "Energy",
+    "ticker_count": 20,
+    "mean_da_1w": 0.4564,
+    "best_ticker": "APA",
+    "best_da": 0.5748,
+    "color": "#1ABC9C"
+  },
+  {
+    "id": "us_etfs",
+    "display_name": "Us Etfs",
+    "sector": "ETFs",
+    "ticker_count": 49,
+    "mean_da_1w": 0.4518,
+    "best_ticker": "XLC",
+    "best_da": 0.6063,
+    "color": "#E67E22"
+  },
+  {
+    "id": "us_financials",
+    "display_name": "Us Financials",
+    "sector": "Financials",
+    "ticker_count": 20,
+    "mean_da_1w": 0.4662,
+    "best_ticker": "GS",
+    "best_da": 0.5635,
+    "color": "#34495E"
+  },
+  {
+    "id": "us_healthcare_services",
+    "display_name": "Us Healthcare Services",
+    "sector": "Healthcare Services",
+    "ticker_count": 48,
+    "mean_da_1w": 0.4648,
+    "best_ticker": "THC",
+    "best_da": 0.5906,
+    "color": "#E91E63"
+  },
+  {
+    "id": "us_industrials",
+    "display_name": "Us Industrials",
+    "sector": "Industrials",
+    "ticker_count": 20,
+    "mean_da_1w": 0.4332,
+    "best_ticker": "GE",
+    "best_da": 0.595,
+    "color": "#00BCD4"
+  },
+  {
+    "id": "us_large_cap_tech",
+    "display_name": "Us Large Cap Tech",
+    "sector": "Technology",
+    "ticker_count": 25,
+    "mean_da_1w": 0.4797,
+    "best_ticker": "CRM",
+    "best_da": 0.5984,
+    "color": "#8BC34A"
+  },
+  {
+    "id": "us_materials",
+    "display_name": "Us Materials",
+    "sector": "Materials",
+    "ticker_count": 45,
+    "mean_da_1w": 0.4639,
+    "best_ticker": "FMC",
+    "best_da": 0.6,
+    "color": "#FF5722"
+  },
+  {
+    "id": "us_real_estate",
+    "display_name": "Us Real Estate",
+    "sector": "Real Estate",
+    "ticker_count": 15,
+    "mean_da_1w": 0.4511,
+    "best_ticker": "WELL",
+    "best_da": 0.5505,
+    "color": "#607D8B"
+  },
+  {
+    "id": "us_semiconductors",
+    "display_name": "Us Semiconductors",
+    "sector": "Semiconductors",
+    "ticker_count": 25,
+    "mean_da_1w": 0.4732,
+    "best_ticker": "NVDA",
+    "best_da": 0.5984,
+    "color": "#795548"
+  },
+  {
+    "id": "us_transportation",
+    "display_name": "Us Transportation",
+    "sector": "Transportation",
+    "ticker_count": 48,
+    "mean_da_1w": 0.432,
+    "best_ticker": "ALGT",
+    "best_da": 0.6,
+    "color": "#FF9800"
+  },
+  {
+    "id": "us_utilities",
+    "display_name": "Us Utilities",
+    "sector": "Utilities",
+    "ticker_count": 15,
+    "mean_da_1w": 0.3966,
+    "best_ticker": "D",
+    "best_da": 0.4818,
+    "color": "#9C27B0"
+  }
+]
