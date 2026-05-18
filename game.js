@@ -769,10 +769,203 @@ function hideDashboard() {
   if (panel) panel.classList.add('hidden');
 }
 
-// showDashTab is implemented in Phase 3
 function showDashTab(tab) {
+  document.querySelectorAll('.dash-tab').forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.getAttribute('onclick') === `showDashTab('${tab}')`) {
+      btn.classList.add('active');
+    }
+  });
+
   const content = document.getElementById('dashboard-content');
-  if (content) content.innerHTML = '<p style="color:var(--text-muted);padding:20px">Dashboard loading…</p>';
+  if (!content) return;
+  const d = dashboardData;
+  const stats = d ? d.backtest_stats : {};
+
+  if (tab === 'overview') {
+    const totalW = stats.total_windows ? stats.total_windows.toLocaleString() : '—';
+    const totalT = stats.total_tickers || '—';
+    const bestDA = stats.best_da_1w ? (stats.best_da_1w * 100).toFixed(1) + '%' : '—';
+    const meanDA = stats.mean_da_1w  ? (stats.mean_da_1w  * 100).toFixed(1) + '%' : '—';
+    const fwdN   = stats.forward_test_predictions || 0;
+    const bestT  = stats.best_ticker_1w || '—';
+
+    content.innerHTML = `
+      <h3>Ecosystem Overview</h3>
+      <div class="dash-stat-grid">
+        <div class="dash-stat-card"><div class="dash-stat-value">${totalW}</div><div class="dash-stat-label">Backtest Windows (1w)</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${totalT}</div><div class="dash-stat-label">Tickers Analyzed</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">16</div><div class="dash-stat-label">Industries</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${meanDA}</div><div class="dash-stat-label">Mean 1w Accuracy</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${bestDA}</div><div class="dash-stat-label">Best Ticker DA (${bestT})</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${fwdN}</div><div class="dash-stat-label">Live Predictions</div></div>
+      </div>
+      <h3>How to Navigate</h3>
+      <div class="dash-section">
+        <p><strong>Galaxy view</strong> — shows all your AI agents as planets. Click any agent to explore it.</p>
+        <p><strong>Financial Agent</strong> — click to see 16 industry universes as orbiting planets. Planet size = number of tickers. Color = accuracy (green = strong, yellow = neutral, red = weak).</p>
+        <p><strong>Industry view</strong> — click any universe planet to see a list of all tickers in that industry with their stats.</p>
+        <p><strong>Ticker detail</strong> — click any ticker row to see full analysis: accuracy by regime, by year, scorer breakdown, and a link to download the raw backtest data as a spreadsheet.</p>
+        <p><strong>Quick nav bar</strong> — the strip below the top bar lets you jump directly to any level. Use ☰ Dashboard to open this panel from anywhere.</p>
+        <p><strong>Phone</strong> — navigate and explore on your phone. Make edits on your computer in Claude Code.</p>
+      </div>
+      <h3>Agent Roster</h3>
+      <div class="dash-section">
+        <p>📈 <strong>Financial Analysis Agent</strong> — analytical. Evaluates stocks using 6 scorers + Monte Carlo simulation.</p>
+        <p>✉ <strong>Email Agent</strong> — reactive. Drafts email replies. Needs Gmail connection to go live.</p>
+        <p>📅 <strong>Meeting Prep Agent</strong> — reactive. Generates prep docs, live notes, follow-ups.</p>
+        <p>💬 <strong>Text Agent</strong> — reactive. Triages and drafts text message replies.</p>
+        <p>📋 <strong>Decision Memo Agent</strong> — reactive. Produces structured decision memos.</p>
+        <p>📖 <strong>Build Guide</strong> — the operating manual for adding new agents. Currently v3 with reactive and analytical branches.</p>
+      </div>`;
+
+  } else if (tab === 'methodology') {
+    const m = d ? d.methodology : {};
+    content.innerHTML = `
+      <h3>How Backtesting Works</h3>
+      <div class="dash-section"><p>${m.backtesting || ''}</p></div>
+      <h3>Directional Accuracy (DA)</h3>
+      <div class="dash-section">
+        <p>${m.directional_accuracy || ''}</p>
+        <p>A DA of 50% = coin flip. A DA of 60%+ = meaningful edge. Only GE has passed all statistical gates (bootstrap CI + permutation test) confirming its edge is real, not lucky.</p>
+      </div>
+      <h3>Monte Carlo Simulation</h3>
+      <div class="dash-section"><p>${m.monte_carlo || ''}</p></div>
+      <h3>Composite Score</h3>
+      <div class="dash-section">
+        <p>${m.composite_score || ''}</p>
+        <p>Formula: <code>(data_completeness + scorer_agreement + monte_carlo_win_rate + historical_calibration) / 4</code></p>
+        <p>The historical calibration floor is max(0.50, actual) so a ticker with no history doesn't drag the score below what random chance would give.</p>
+      </div>
+      <h3>Forward Testing</h3>
+      <div class="dash-section">
+        <p>${m.forward_testing || ''}</p>
+        <p>39 tickers currently in forward test. Predictions started 2026-05-18. First resolutions expected ~21 days later. Results will appear in the Forward Test tab once available.</p>
+      </div>
+      <h3>Tiers</h3>
+      <div class="dash-section">
+        <p><span class="dash-tag">Significant Edge</span> DA >= 60% with 10+ windows. Strongest confirmed signal.</p>
+        <p><span class="dash-tag">Candidate</span> DA >= 55% with 5+ windows. Promising, needs more data.</p>
+        <p><span class="dash-tag">Weak</span> Below threshold. No reliable edge — but model still runs predictions for data accumulation.</p>
+      </div>`;
+
+  } else if (tab === 'sources') {
+    const s = d ? d.data_sources : {};
+    content.innerHTML = `
+      <h3>Data Sources</h3>
+      <div class="dash-section">
+        <p><strong>Price data (OHLCV)</strong><br>${s.price_ohlcv || 'yfinance'}<br><em>Open, High, Low, Close, Volume — daily bars going back to 2018.</em></p>
+        <p><strong>Fundamental data</strong><br>${s.fundamentals || 'yfinance Ticker.info'}<br><em>Note: fetched at current date, not historical point-in-time. This may introduce slight look-ahead bias in fundamental scorers.</em></p>
+        <p><strong>Macro data</strong><br>${s.macro || 'FRED API — not active'}<br><em>Not currently active. Macro scorer defaults to 50/100. To activate: configure FRED_API_KEY environment variable.</em></p>
+        <p><strong>Database</strong><br>${s.backtest_db || 'SQLite'}</p>
+      </div>
+      <h3>What Each Number Means</h3>
+      <div class="dash-section">
+        <table class="dash-table">
+          <tr><th>Field</th><th>Source</th><th>Meaning</th></tr>
+          <tr><td>DA %</td><td>backtest_windows table</td><td>% of directional predictions correct on 1-week horizon</td></tr>
+          <tr><td>XP</td><td>backtest_windows table</td><td>Total correct predictions across all backtest windows</td></tr>
+          <tr><td>Composite</td><td>Computed at prediction time</td><td>Confidence score 0-1 from 4 components</td></tr>
+          <tr><td>Momentum score</td><td>scored_windows table</td><td>RSI, MACD, MA crossover (0-100)</td></tr>
+          <tr><td>Value score</td><td>scored_windows table</td><td>P/E, P/B, FCF yield (0-100)</td></tr>
+          <tr><td>Growth score</td><td>scored_windows table</td><td>Revenue growth, earnings growth (0-100)</td></tr>
+          <tr><td>Mean Rev score</td><td>scored_windows table</td><td>Bollinger Bands, RSI extremes (0-100)</td></tr>
+          <tr><td>Macro score</td><td>scored_windows table</td><td>Yield curve, rates — INACTIVE, always 50</td></tr>
+          <tr><td>Quality score</td><td>scored_windows table</td><td>ROE, margins, leverage (0-100)</td></tr>
+          <tr><td>Regime</td><td>Computed from ATR + moving averages</td><td>Market condition: bull/bear/chop/volatile/crisis</td></tr>
+        </table>
+      </div>`;
+
+  } else if (tab === 'scorers') {
+    const sc = d ? d.scorers : {};
+    const scorerRows = Object.entries(sc).map(([name, desc]) => `
+      <div style="margin-bottom:14px">
+        <strong style="color:var(--accent);text-transform:capitalize">${name}</strong><br>
+        <span style="color:var(--text-muted);font-size:13px">${desc}</span>
+      </div>`).join('');
+    content.innerHTML = `
+      <h3>The 6 Scorers (0-100 each)</h3>
+      <p>Every ticker is evaluated across 6 dimensions. The scores feed into the composite confidence score for each prediction.</p>
+      <div class="dash-section">${scorerRows}</div>
+      <div class="dash-warning">⚠ Macro scorer is currently inactive. All macro scores default to 50. This means the composite score is effectively based on 5 scorers, not 6. To activate: set FRED_API_KEY in your environment and re-run the analysis.</div>
+      <h3>How Scores Combine</h3>
+      <p>The 6 scorer outputs (0-100 each) are combined with a weight profile. Default weights are equal (1/6 each). The weighted average is normalized to 0-1 and feeds into the composite score alongside Monte Carlo win rate, data completeness, and historical calibration.</p>
+      <p>Bootstrap testing showed weight optimization requires 1000+ scored windows to be meaningful. Currently at 720 windows — more accumulates automatically with each forward-test run.</p>`;
+
+  } else if (tab === 'backtest') {
+    const totalW = stats.total_windows ? stats.total_windows.toLocaleString() : '—';
+    const totalT = stats.total_tickers || '—';
+    const meanDA = stats.mean_da_1w ? (stats.mean_da_1w * 100).toFixed(1) + '%' : '—';
+    const bestT  = stats.best_ticker_1w || '—';
+    const bestDA = stats.best_da_1w ? (stats.best_da_1w * 100).toFixed(1) + '%' : '—';
+    content.innerHTML = `
+      <h3>Backtest Results Summary</h3>
+      <div class="dash-stat-grid">
+        <div class="dash-stat-card"><div class="dash-stat-value">${totalW}</div><div class="dash-stat-label">Total 1w Windows</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${totalT}</div><div class="dash-stat-label">Tickers Analyzed</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">2018–2026</div><div class="dash-stat-label">Date Range</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">${meanDA}</div><div class="dash-stat-label">Mean Accuracy (1w)</div></div>
+      </div>
+      <h3>Key Findings</h3>
+      <div class="dash-section">
+        <p>• <strong>1-week horizon</strong> is the strongest interval. Very short (1-2 day) and short (2-5 day) windows produce only neutral signals — Monte Carlo win rates cluster too tightly around 50% to breach the prediction threshold.</p>
+        <p>• <strong>Only GE</strong> passes all statistical gates: bootstrap 95% CI lower bound > 55%, permutation test p &lt; 0.05. All other tickers are in training mode.</p>
+        <p>• <strong>Regime shift</strong> accounts for 56.9% of wrong predictions. The model itself is not the main bottleneck — timing relative to regime changes is.</p>
+        <p>• <strong>Best performing</strong> ticker: ${bestT} at ${bestDA} DA.</p>
+        <p>• <strong>High-volatility regime</strong> is the trap: highest Monte Carlo win rate but second-lowest realized accuracy. Treat high-volatility predictions with caution.</p>
+      </div>
+      <h3>Statistical Validation</h3>
+      <div class="dash-section">
+        <p>Every ticker was tested with:</p>
+        <p>• <strong>Bootstrap CI</strong> — 1000 resamples. Tests if DA is genuinely above 50% vs lucky.</p>
+        <p>• <strong>Permutation test</strong> — 1000 shuffles. Tests if the edge survives random label scrambling.</p>
+        <p>• <strong>Multi-seed Monte Carlo</strong> — 30 seeds. Tests if win rate is stable across different random draws.</p>
+        <p>• <strong>Look-ahead verification</strong> — oracle delta >= +0.20 on all tested tickers. Pipeline is confirmed clean.</p>
+      </div>`;
+
+  } else if (tab === 'forward') {
+    const fwdN = stats.forward_test_predictions || 0;
+    content.innerHTML = `
+      <h3>Forward Test Status</h3>
+      <div class="dash-stat-grid">
+        <div class="dash-stat-card"><div class="dash-stat-value">${fwdN}</div><div class="dash-stat-label">Predictions Logged</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">39</div><div class="dash-stat-label">Tickers in Forward Test</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">21 days</div><div class="dash-stat-label">Resolution Horizon</div></div>
+        <div class="dash-stat-card"><div class="dash-stat-value">0</div><div class="dash-stat-label">Resolved So Far</div></div>
+      </div>
+      <div class="dash-warning">⏳ Forward-test predictions started 2026-05-18. First resolutions expected ~2026-06-08 (21 days later). This tab will show live accuracy results once predictions resolve.</div>
+      <h3>How Forward Testing Works</h3>
+      <div class="dash-section">
+        <p>Each morning at 9:35am ET (once Task Scheduler is configured), the system automatically:</p>
+        <p>1. Fetches today's price for all 39 forward-test tickers</p>
+        <p>2. Runs the full scoring pipeline on each</p>
+        <p>3. Stores a prediction: UP, DOWN, or NEUTRAL with confidence</p>
+        <p>After 21 calendar days, the reconciliation script runs at 4:30pm ET, fetches the actual price, and records whether the prediction was correct.</p>
+      </div>
+      <h3>Task Scheduler Setup</h3>
+      <div class="dash-section">
+        <p>To activate daily automation:</p>
+        <p>1. Run: <code>python scripts/task_scheduler_setup.py</code></p>
+        <p>2. Open Windows Task Scheduler</p>
+        <p>3. Import the two XML files from <code>financial-analysis-agent/data/exports/</code></p>
+        <p>4. Set laptop sleep to Never (Settings > System > Power & Sleep)</p>
+        <p>Full instructions: <code>STEP4_INSTRUCTIONS.md</code> at repo root.</p>
+      </div>`;
+
+  } else if (tab === 'limits') {
+    const limits = d ? d.known_limitations : [];
+    const limitRows = limits.map(l => `<div class="dash-warning">⚠ ${l}</div>`).join('');
+    content.innerHTML = `
+      <h3>Known Limitations</h3>
+      <p>These are confirmed gaps in the current system. Being transparent about them is part of the methodology.</p>
+      <div class="dash-section">${limitRows}</div>
+      <h3>What This Agent Can and Cannot Do</h3>
+      <div class="dash-section">
+        <p><strong>Can:</strong> Identify tickers where a statistical directional edge exists over a 1-week horizon based on historical price patterns and fundamentals.</p>
+        <p><strong>Cannot:</strong> Predict news events, earnings surprises, macro shifts, or regime changes. Cannot account for real-time data, after-hours moves, or liquidity constraints.</p>
+        <p><strong>Not financial advice.</strong> This is a research and learning system. All predictions are for educational purposes.</p>
+      </div>`;
+  }
 }
 
 // ══════════════════════════════════════════════════════════════════

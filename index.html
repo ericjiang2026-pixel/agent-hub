@@ -54,6 +54,48 @@
   <!-- Error toast -->
   <div id="toast" class="hidden"></div>
 
+  <!-- Dashboard panel -->
+  <div id="dashboard-panel" class="hidden">
+    <div id="dashboard-inner">
+      <div id="dashboard-header">
+        <h2>⬡ Agent Hub Dashboard</h2>
+        <button id="dashboard-close" onclick="hideDashboard()">×</button>
+      </div>
+
+      <div id="dashboard-tabs">
+        <button class="dash-tab active" onclick="showDashTab('overview')">Overview</button>
+        <button class="dash-tab" onclick="showDashTab('methodology')">How It Works</button>
+        <button class="dash-tab" onclick="showDashTab('sources')">Data Sources</button>
+        <button class="dash-tab" onclick="showDashTab('scorers')">Scorers</button>
+        <button class="dash-tab" onclick="showDashTab('backtest')">Backtest Results</button>
+        <button class="dash-tab" onclick="showDashTab('forward')">Forward Test</button>
+        <button class="dash-tab" onclick="showDashTab('limits')">Limitations</button>
+      </div>
+
+      <div id="dashboard-content">
+        <!-- Filled dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Ticker list -->
+  <div id="ticker-list-container" class="hidden">
+    <div id="ticker-list-header">
+      <input type="text" id="ticker-search"
+             placeholder="🔍 Search tickers..."
+             oninput="filterTickerList(this.value)">
+      <div id="ticker-list-sort">
+        Sort:
+        <button class="sort-btn active" onclick="sortTickerList('da')">DA %</button>
+        <button class="sort-btn" onclick="sortTickerList('name')">Name</button>
+        <button class="sort-btn" onclick="sortTickerList('windows')">Windows</button>
+      </div>
+    </div>
+    <div id="ticker-list-body">
+      <!-- Rows injected by JS -->
+    </div>
+  </div>
+
   <script src="game.js"></script>
 </body>
 </html>
