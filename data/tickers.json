@@ -10,8 +10,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7303,
-      "created_at": "2026-05-18T07:11:23.800996+00:00"
+      "composite": 0.7295,
+      "created_at": "2026-05-19T16:37:43.482249+00:00"
     },
     "csv_path": "data/tickers/SPOT.csv",
     "detail": {
@@ -101,8 +101,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6956,
-      "created_at": "2026-05-18T07:11:26.757349+00:00"
+      "composite": 0.6965,
+      "created_at": "2026-05-19T16:37:55.480985+00:00"
     },
     "csv_path": "data/tickers/MNTS.csv",
     "detail": {
@@ -184,8 +184,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7062,
-      "created_at": "2026-05-18T07:11:29.630962+00:00"
+      "composite": 0.7119,
+      "created_at": "2026-05-19T16:38:11.558263+00:00"
     },
     "csv_path": "data/tickers/BIIB.csv",
     "detail": {
@@ -275,8 +275,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6791,
-      "created_at": "2026-05-18T07:11:32.912825+00:00"
+      "composite": 0.6882,
+      "created_at": "2026-05-19T16:38:37.538488+00:00"
     },
     "csv_path": "data/tickers/BMY.csv",
     "detail": {
@@ -366,8 +366,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6562,
-      "created_at": "2026-05-18T07:11:36.339893+00:00"
+      "composite": 0.6524,
+      "created_at": "2026-05-19T16:38:48.474422+00:00"
     },
     "csv_path": "data/tickers/XLC.csv",
     "detail": {
@@ -457,8 +457,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6465,
-      "created_at": "2026-05-18T07:11:39.292719+00:00"
+      "composite": 0.6391,
+      "created_at": "2026-05-19T16:39:01.276588+00:00"
     },
     "csv_path": "data/tickers/ALGT.csv",
     "detail": {
@@ -548,8 +548,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6803,
-      "created_at": "2026-05-18T07:11:42.145434+00:00"
+      "composite": 0.6637,
+      "created_at": "2026-05-19T16:39:12.492539+00:00"
     },
     "csv_path": "data/tickers/FMC.csv",
     "detail": {
@@ -594,12 +594,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 51.25,
+        "value": 65.0,
+        "growth": 39.25,
+        "mean_reversion": 62.0,
+        "macro": 63.25,
+        "quality": 19.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -638,9 +638,9 @@
     "forward_test_active": true,
     "last_prediction": {
       "direction": "up",
-      "confidence": "Medium",
-      "composite": 0.6948,
-      "created_at": "2026-05-18T07:11:45.012735+00:00"
+      "confidence": "High",
+      "composite": 0.7267,
+      "created_at": "2026-05-19T16:39:22.808242+00:00"
     },
     "csv_path": "data/tickers/LUMN.csv",
     "detail": {
@@ -730,8 +730,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6883,
-      "created_at": "2026-05-18T07:11:47.902606+00:00"
+      "composite": 0.6927,
+      "created_at": "2026-05-19T16:39:31.233023+00:00"
     },
     "csv_path": "data/tickers/CRM.csv",
     "detail": {
@@ -821,8 +821,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7312,
-      "created_at": "2026-05-18T07:11:50.866324+00:00"
+      "composite": 0.7255,
+      "created_at": "2026-05-19T16:39:39.512695+00:00"
     },
     "csv_path": "data/tickers/NVDA.csv",
     "detail": {
@@ -912,8 +912,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7129,
-      "created_at": "2026-05-18T07:11:53.662900+00:00"
+      "composite": 0.7252,
+      "created_at": "2026-05-19T16:39:47.265981+00:00"
     },
     "csv_path": "data/tickers/ZETA.csv",
     "detail": {
@@ -1003,8 +1003,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6591,
-      "created_at": "2026-05-18T07:11:56.472889+00:00"
+      "composite": 0.6593,
+      "created_at": "2026-05-19T16:39:57.794062+00:00"
     },
     "csv_path": "data/tickers/META.csv",
     "detail": {
@@ -1094,8 +1094,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6717,
-      "created_at": "2026-05-18T07:11:59.412813+00:00"
+      "composite": 0.6564,
+      "created_at": "2026-05-19T16:40:06.260917+00:00"
     },
     "csv_path": "data/tickers/GE.csv",
     "detail": {
@@ -1185,8 +1185,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.726,
-      "created_at": "2026-05-18T07:12:02.687780+00:00"
+      "composite": 0.7239,
+      "created_at": "2026-05-19T16:40:14.503612+00:00"
     },
     "csv_path": "data/tickers/NFLX.csv",
     "detail": {
@@ -1276,8 +1276,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6488,
-      "created_at": "2026-05-18T07:12:05.717636+00:00"
+      "composite": 0.6255,
+      "created_at": "2026-05-19T16:40:22.324194+00:00"
     },
     "csv_path": "data/tickers/THC.csv",
     "detail": {
@@ -1367,8 +1367,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.667,
-      "created_at": "2026-05-18T07:12:08.654951+00:00"
+      "composite": 0.6601,
+      "created_at": "2026-05-19T16:40:33.205331+00:00"
     },
     "csv_path": "data/tickers/TROX.csv",
     "detail": {
@@ -1458,8 +1458,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6082,
-      "created_at": "2026-05-18T07:12:11.505223+00:00"
+      "composite": 0.6033,
+      "created_at": "2026-05-19T16:40:42.579832+00:00"
     },
     "csv_path": "data/tickers/MCK.csv",
     "detail": {
@@ -1549,8 +1549,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6117,
-      "created_at": "2026-05-18T07:12:14.316077+00:00"
+      "composite": 0.6055,
+      "created_at": "2026-05-19T16:40:49.348847+00:00"
     },
     "csv_path": "data/tickers/XRAY.csv",
     "detail": {
@@ -1636,8 +1636,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.5813,
-      "created_at": "2026-05-18T07:12:17.296063+00:00"
+      "composite": 0.5772,
+      "created_at": "2026-05-19T16:40:56.950037+00:00"
     },
     "csv_path": "data/tickers/DOT-USD.csv",
     "detail": {
@@ -1731,8 +1731,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.607,
-      "created_at": "2026-05-18T07:12:20.061056+00:00"
+      "composite": 0.646,
+      "created_at": "2026-05-19T16:41:03.150182+00:00"
     },
     "csv_path": "data/tickers/BSX.csv",
     "detail": {
@@ -1822,8 +1822,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7702,
-      "created_at": "2026-05-18T07:12:23.017400+00:00"
+      "composite": 0.774,
+      "created_at": "2026-05-19T16:41:10.062881+00:00"
     },
     "csv_path": "data/tickers/APA.csv",
     "detail": {
@@ -1913,8 +1913,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6395,
-      "created_at": "2026-05-18T07:12:25.911261+00:00"
+      "composite": 0.6345,
+      "created_at": "2026-05-19T16:41:16.975453+00:00"
     },
     "csv_path": "data/tickers/NEM.csv",
     "detail": {
@@ -2004,8 +2004,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6065,
-      "created_at": "2026-05-18T07:12:28.753634+00:00"
+      "composite": 0.6128,
+      "created_at": "2026-05-19T16:41:25.794230+00:00"
     },
     "csv_path": "data/tickers/HCA.csv",
     "detail": {
@@ -2050,12 +2050,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 56.5,
+        "value": 83.0,
+        "growth": 57.75,
+        "mean_reversion": 80.5,
+        "macro": 63.25,
+        "quality": 54.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -2095,8 +2095,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6579,
-      "created_at": "2026-05-18T07:12:32.166853+00:00"
+      "composite": 0.6466,
+      "created_at": "2026-05-19T16:41:32.808847+00:00"
     },
     "csv_path": "data/tickers/BOTZ.csv",
     "detail": {
@@ -2141,12 +2141,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 42.0,
+        "value": 50.0,
+        "growth": 50.0,
+        "mean_reversion": 41.0,
+        "macro": 63.25,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -2186,8 +2186,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7472,
-      "created_at": "2026-05-18T07:12:35.218458+00:00"
+      "composite": 0.7352,
+      "created_at": "2026-05-19T16:41:39.365549+00:00"
     },
     "csv_path": "data/tickers/MU.csv",
     "detail": {
@@ -2277,8 +2277,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7309,
-      "created_at": "2026-05-18T07:12:38.044821+00:00"
+      "composite": 0.7406,
+      "created_at": "2026-05-19T16:41:46.218878+00:00"
     },
     "csv_path": "data/tickers/SOXX.csv",
     "detail": {
@@ -2368,8 +2368,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6132,
-      "created_at": "2026-05-18T07:12:41.028968+00:00"
+      "composite": 0.5946,
+      "created_at": "2026-05-19T16:41:52.948946+00:00"
     },
     "csv_path": "data/tickers/WING.csv",
     "detail": {
@@ -2459,8 +2459,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7149,
-      "created_at": "2026-05-18T07:12:43.847682+00:00"
+      "composite": 0.7103,
+      "created_at": "2026-05-19T16:42:01.279861+00:00"
     },
     "csv_path": "data/tickers/GS.csv",
     "detail": {
@@ -2549,9 +2549,9 @@
     "forward_test_active": true,
     "last_prediction": {
       "direction": "up",
-      "confidence": "High",
-      "composite": 0.7169,
-      "created_at": "2026-05-18T07:12:46.626742+00:00"
+      "confidence": "Medium",
+      "composite": 0.6956,
+      "created_at": "2026-05-19T16:42:08.032234+00:00"
     },
     "csv_path": "data/tickers/BLNK.csv",
     "detail": {
@@ -2637,8 +2637,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7145,
-      "created_at": "2026-05-18T07:12:49.383681+00:00"
+      "composite": 0.7214,
+      "created_at": "2026-05-19T16:42:15.199348+00:00"
     },
     "csv_path": "data/tickers/HOLX.csv",
     "detail": {
@@ -2683,12 +2683,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 49.0,
+        "value": 63.0,
+        "growth": 45.75,
+        "mean_reversion": 78.0,
+        "macro": 50.0,
+        "quality": 66.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -2728,8 +2728,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6565,
-      "created_at": "2026-05-18T07:12:52.255710+00:00"
+      "composite": 0.6591,
+      "created_at": "2026-05-19T16:42:22.124283+00:00"
     },
     "csv_path": "data/tickers/AXON.csv",
     "detail": {
@@ -2819,8 +2819,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7468,
-      "created_at": "2026-05-18T07:12:55.142864+00:00"
+      "composite": 0.749,
+      "created_at": "2026-05-19T16:42:31.227927+00:00"
     },
     "csv_path": "data/tickers/GOOGL.csv",
     "detail": {
@@ -2910,8 +2910,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6498,
-      "created_at": "2026-05-18T07:12:58.012906+00:00"
+      "composite": 0.6468,
+      "created_at": "2026-05-19T16:42:40.289250+00:00"
     },
     "csv_path": "data/tickers/PH.csv",
     "detail": {
@@ -3001,8 +3001,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7089,
-      "created_at": "2026-05-18T07:13:00.782659+00:00"
+      "composite": 0.7097,
+      "created_at": "2026-05-19T16:42:47.152632+00:00"
     },
     "csv_path": "data/tickers/SMH.csv",
     "detail": {
@@ -3092,8 +3092,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7232,
-      "created_at": "2026-05-18T07:13:03.966713+00:00"
+      "composite": 0.7104,
+      "created_at": "2026-05-19T16:42:53.989214+00:00"
     },
     "csv_path": "data/tickers/ETN.csv",
     "detail": {
@@ -3183,8 +3183,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7011,
-      "created_at": "2026-05-18T07:13:07.193574+00:00"
+      "composite": 0.7046,
+      "created_at": "2026-05-19T16:43:03.333441+00:00"
     },
     "csv_path": "data/tickers/IVV.csv",
     "detail": {
@@ -3274,8 +3274,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6137,
-      "created_at": "2026-05-18T07:13:10.254848+00:00"
+      "composite": 0.6184,
+      "created_at": "2026-05-19T16:43:10.028628+00:00"
     },
     "csv_path": "data/tickers/UHS.csv",
     "detail": {
@@ -3320,12 +3320,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 65.5,
+        "value": 83.0,
+        "growth": 57.75,
+        "mean_reversion": 88.5,
+        "macro": 63.25,
+        "quality": 67.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -3365,8 +3365,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "High",
-      "composite": 0.7011,
-      "created_at": "2026-05-18T07:13:13.100491+00:00"
+      "composite": 0.7014,
+      "created_at": "2026-05-19T16:43:17.888046+00:00"
     },
     "csv_path": "data/tickers/VOO.csv",
     "detail": {
@@ -3456,8 +3456,8 @@
     "last_prediction": {
       "direction": "up",
       "confidence": "Medium",
-      "composite": 0.6795,
-      "created_at": "2026-05-18T07:13:15.990250+00:00"
+      "composite": 0.6933,
+      "created_at": "2026-05-19T16:43:25.886750+00:00"
     },
     "csv_path": "data/tickers/WELL.csv",
     "detail": {
@@ -3588,12 +3588,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 52.0,
+        "value": 35.5,
+        "growth": 66.0,
+        "mean_reversion": 51.5,
+        "macro": 63.25,
+        "quality": 72.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -4109,12 +4109,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 58.0,
+        "value": 27.5,
+        "growth": 66.0,
+        "mean_reversion": 60.25,
+        "macro": 63.25,
+        "quality": 43.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -4625,12 +4625,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 51.25,
+        "value": 44.5,
+        "growth": 54.25,
+        "mean_reversion": 56.75,
+        "macro": 63.25,
+        "quality": 45.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -5138,12 +5138,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 73.0,
+        "growth": 23.25,
+        "mean_reversion": 82.25,
+        "macro": 63.25,
+        "quality": 67.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -5818,12 +5818,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 51.25,
+        "value": 83.0,
+        "growth": 45.75,
+        "mean_reversion": 56.75,
+        "macro": 63.25,
+        "quality": 62.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -5990,12 +5990,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 54.5,
+        "value": 30.0,
+        "growth": 73.5,
+        "mean_reversion": 51.5,
+        "macro": 63.25,
+        "quality": 30.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -7469,12 +7469,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 56.0,
+        "growth": 50.0,
+        "mean_reversion": 41.0,
+        "macro": 63.25,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -7641,12 +7641,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 51.25,
+        "value": 89.0,
+        "growth": 40.75,
+        "mean_reversion": 62.0,
+        "macro": 63.25,
+        "quality": 61.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -8248,12 +8248,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 43.5,
+        "growth": 59.5,
+        "mean_reversion": 49.75,
+        "macro": 63.25,
+        "quality": 57.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -8855,12 +8855,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 52.0,
+        "value": 85.0,
+        "growth": 33.25,
+        "mean_reversion": 41.0,
+        "macro": 63.25,
+        "quality": 67.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -10051,12 +10051,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 48.25,
+        "value": 77.0,
+        "growth": 27.0,
+        "mean_reversion": 48.0,
+        "macro": 63.25,
+        "quality": 34.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -10223,12 +10223,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 51.25,
+        "value": 77.0,
+        "growth": 44.25,
+        "mean_reversion": 62.0,
+        "macro": 63.25,
+        "quality": 25.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -10567,12 +10567,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 43.0,
+        "growth": 92.0,
+        "mean_reversion": 82.25,
+        "macro": 63.25,
+        "quality": 81.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -12463,12 +12463,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 42.0,
+        "value": 46.5,
+        "growth": 77.75,
+        "mean_reversion": 55.0,
+        "macro": 63.25,
+        "quality": 66.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -13676,12 +13676,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 52.0,
+        "value": 67.0,
+        "growth": 49.25,
+        "mean_reversion": 51.5,
+        "macro": 63.25,
+        "quality": 30.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -15654,12 +15654,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 89.0,
+        "growth": 33.25,
+        "mean_reversion": 63.0,
+        "macro": 63.25,
+        "quality": 52.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -16519,12 +16519,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 52.0,
+        "value": 73.0,
+        "growth": 36.25,
+        "mean_reversion": 51.5,
+        "macro": 63.25,
+        "quality": 61.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -17134,12 +17134,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 51.5,
+        "growth": 54.5,
+        "mean_reversion": 51.5,
+        "macro": 63.25,
+        "quality": 68.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -17478,12 +17478,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 67.0,
+        "growth": 49.25,
+        "mean_reversion": 41.0,
+        "macro": 63.25,
+        "quality": 44.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -19289,12 +19289,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 65.5,
+        "value": 35.5,
+        "growth": 69.5,
+        "mean_reversion": 74.25,
+        "macro": 63.25,
+        "quality": 77.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -19891,12 +19891,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 54.5,
+        "growth": 40.5,
+        "mean_reversion": 82.25,
+        "macro": 50.0,
+        "quality": 30.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -23675,12 +23675,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 59.25,
+        "value": 67.0,
+        "growth": 45.75,
+        "mean_reversion": 49.75,
+        "macro": 63.25,
+        "quality": 52.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -23761,12 +23761,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 55.25,
+        "value": 47.0,
+        "growth": 48.5,
+        "mean_reversion": 62.0,
+        "macro": 63.25,
+        "quality": 43.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -24110,12 +24110,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 66.5,
+        "growth": 60.5,
+        "mean_reversion": 71.75,
+        "macro": 63.25,
+        "quality": 39.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -24196,12 +24196,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 73.0,
+        "growth": 63.25,
+        "mean_reversion": 41.0,
+        "macro": 63.25,
+        "quality": 56.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -24540,12 +24540,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 58.0,
+        "value": 56.5,
+        "growth": 74.5,
+        "mean_reversion": 74.25,
+        "macro": 48.25,
+        "quality": 58.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -24626,12 +24626,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 61.5,
+        "value": 56.5,
+        "growth": 68.5,
+        "mean_reversion": 88.5,
+        "macro": 63.25,
+        "quality": 61.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -25749,12 +25749,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 56.5,
+        "value": 73.0,
+        "growth": 54.25,
+        "mean_reversion": 66.5,
+        "macro": 63.25,
+        "quality": 52.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -25921,12 +25921,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 43.25,
+        "value": 89.0,
+        "growth": 49.25,
+        "mean_reversion": 48.0,
+        "macro": 63.25,
+        "quality": 62.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -28247,12 +28247,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 50.5,
+        "growth": 50.0,
+        "mean_reversion": 58.5,
+        "macro": 63.25,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -28333,12 +28333,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 48.25,
+        "value": 62.0,
+        "growth": 57.25,
+        "mean_reversion": 35.75,
+        "macro": 63.25,
+        "quality": 30.5
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -29107,12 +29107,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 50.0,
+        "growth": 50.0,
+        "mean_reversion": 58.5,
+        "macro": 50.0,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -29279,12 +29279,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 58.0,
+        "value": 39.5,
+        "growth": 54.25,
+        "mean_reversion": 82.25,
+        "macro": 63.25,
+        "quality": 67.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -29537,12 +29537,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 42.0,
+        "value": 67.0,
+        "growth": 62.25,
+        "mean_reversion": 35.75,
+        "macro": 63.25,
+        "quality": 30.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -33332,12 +33332,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 48.25,
+        "value": 73.0,
+        "growth": 54.5,
+        "mean_reversion": 62.0,
+        "macro": 63.25,
+        "quality": 57.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -34278,12 +34278,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 39.75,
+        "value": 77.0,
+        "growth": 35.5,
+        "mean_reversion": 35.75,
+        "macro": 63.25,
+        "quality": 15.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -34536,12 +34536,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 45.0,
+        "value": 46.5,
+        "growth": 69.25,
+        "mean_reversion": 60.25,
+        "macro": 63.25,
+        "quality": 39.25
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -34966,12 +34966,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 62.25,
+        "value": 50.0,
+        "growth": 50.0,
+        "mean_reversion": 49.75,
+        "macro": 63.25,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -35138,12 +35138,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 70.5,
+        "value": 56.0,
+        "growth": 54.25,
+        "mean_reversion": 63.75,
+        "macro": 63.25,
+        "quality": 67.75
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -35740,12 +35740,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 64.5,
+        "value": 64.0,
+        "growth": 50.0,
+        "mean_reversion": 63.0,
+        "macro": 63.25,
+        "quality": 50.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
@@ -36686,12 +36686,12 @@
         }
       },
       "scorer_snapshot": {
-        "momentum": null,
-        "value": null,
-        "growth": null,
-        "mean_reversion": null,
-        "macro": null,
-        "quality": null
+        "momentum": 48.25,
+        "value": 61.0,
+        "growth": 42.25,
+        "mean_reversion": 35.75,
+        "macro": 63.25,
+        "quality": 42.0
       },
       "data_sources": {
         "price_data": "yfinance (daily OHLCV)",
