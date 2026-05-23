@@ -1462,6 +1462,108 @@ document.getElementById('modal-close').addEventListener('click', () => {
 });
 
 // ══════════════════════════════════════════════════════════════════
+// MORNING SUMMARY
+// ══════════════════════════════════════════════════════════════════
+const MORNING_AGENT_IDS = [
+  'email-agent', 'meeting-prep-agent', 'text-agent',
+  'decision-memo-agent', 'financial-analysis-agent',
+];
+
+function agentHealthColor(lastUpdated) {
+  if (!lastUpdated) return 'red';
+  const ageHours = (Date.now() - new Date(lastUpdated).getTime()) / 3600000;
+  if (ageHours <= 24)  return 'green';
+  if (ageHours <= 168) return 'yellow';
+  return 'red';
+}
+
+function formatRelativeTime(lastUpdated) {
+  if (!lastUpdated) return 'Never updated';
+  const ms   = Date.now() - new Date(lastUpdated).getTime();
+  const mins = Math.floor(ms / 60000);
+  if (mins < 60)  return `${mins}m ago`;
+  const hours = Math.floor(ms / 3600000);
+  if (hours < 24) return `${hours}h ago`;
+  const days  = Math.floor(ms / 86400000);
+  return `${days}d ago`;
+}
+
+function buildMorningSummaryContent() {
+  const statuses = MORNING_AGENT_IDS.map(id => {
+    const agent  = HUB_DATA.agents[id] || {};
+    const health = agentHealthColor(agent.last_updated || null);
+    return { id, agent, health };
+  });
+
+  const agentRowsHtml = statuses.map(({ id, agent, health }) => {
+    const name      = agent.display_name || id;
+    const icon      = agent.icon || '?';
+    const timeStr   = formatRelativeTime(agent.last_updated || null);
+    const statusText = health === 'green'  ? 'Active'
+                     : health === 'yellow' ? 'Needs attention'
+                     : 'Stale — check agent';
+    return `
+      <div class="summary-agent-row">
+        <div class="summary-health-dot ${health}"></div>
+        <div class="summary-agent-info">
+          <div class="summary-agent-name">${icon} ${name}</div>
+          <div class="summary-agent-status">${statusText}</div>
+        </div>
+        <div class="summary-agent-time">${timeStr}</div>
+      </div>`;
+  }).join('');
+
+  const redAgents    = statuses.filter(s => s.health === 'red');
+  const yellowAgents = statuses.filter(s => s.health === 'yellow');
+
+  let alertsHtml = '';
+  if (redAgents.length > 0) {
+    const names = redAgents.map(s => s.agent.display_name || s.id).join(', ');
+    alertsHtml += `<div class="summary-alert">⚠ ${names} ${redAgents.length > 1 ? 'are' : 'is'} stale and may need attention.</div>`;
+  }
+  const fwdCount = (HUB_DATA.tickers || []).filter(t => t.forward_test_active).length;
+  if (fwdCount > 0) {
+    alertsHtml += `<div class="summary-alert" style="background:rgba(74,158,255,0.1);border-color:rgba(74,158,255,0.3);color:var(--accent)">📈 ${fwdCount} tickers in forward test — open Financial Agent to review.</div>`;
+  }
+
+  let recText;
+  if (redAgents.length > 0) {
+    const names = redAgents.map(s => s.agent.display_name || s.id).join(', ');
+    recText = `${names} ${redAgents.length > 1 ? 'have' : 'has'} not been updated recently. Open Claude Code and run the agent${redAgents.length > 1 ? 's' : ''} to refresh.`;
+  } else if (yellowAgents.length > 0) {
+    const names = yellowAgents.map(s => s.agent.display_name || s.id).join(', ');
+    recText = `${names} ${yellowAgents.length > 1 ? 'are' : 'is'} due for an update. Consider running ${yellowAgents.length > 1 ? 'them' : 'it'} today.`;
+  } else {
+    recText = 'All agents are active and up to date. Check the Financial Agent for today\'s forward-test predictions.';
+  }
+
+  return `
+    <div class="summary-section-title">Agent Health</div>
+    ${agentRowsHtml}
+    ${alertsHtml ? `<div style="margin-top:12px">${alertsHtml}</div>` : ''}
+    <div class="summary-recommendation">
+      <div class="summary-rec-label">Recommended Action</div>
+      <div class="summary-rec-text">${recText}</div>
+    </div>`;
+}
+
+function showMorningSummary() {
+  const el = document.getElementById('morning-summary');
+  if (!el) return;
+  document.getElementById('morning-summary-content').innerHTML = buildMorningSummaryContent();
+  el.classList.remove('hidden');
+  document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#mobile-bottom-nav .mobile-nav-btn:last-child').classList.add('active');
+}
+
+function hideMorningSummary() {
+  const el = document.getElementById('morning-summary');
+  if (el) el.classList.add('hidden');
+  document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('#mobile-bottom-nav .mobile-nav-btn:first-child').classList.add('active');
+}
+
+// ══════════════════════════════════════════════════════════════════
 // LAST UPDATED
 // ══════════════════════════════════════════════════════════════════
 function updateLastUpdated() {

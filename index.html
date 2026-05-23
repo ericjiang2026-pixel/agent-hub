@@ -96,6 +96,43 @@
     </div>
   </div>
 
+  <!-- Mobile bottom nav -->
+  <nav id="mobile-bottom-nav">
+    <button class="mobile-nav-btn active" onclick="navigateTo('GALAXY')">
+      <span class="mobile-nav-icon">🌌</span>
+      <span class="mobile-nav-label">Hub</span>
+      <span class="notification-dot" id="dot-hub"></span>
+    </button>
+    <button class="mobile-nav-btn" id="mnav-financial" onclick="navigateTo('AGENT_FINANCIAL')">
+      <span class="mobile-nav-icon">📈</span>
+      <span class="mobile-nav-label">Financial</span>
+      <span class="notification-dot" id="dot-financial"></span>
+    </button>
+    <button class="mobile-nav-btn" onclick="showDashboard()">
+      <span class="mobile-nav-icon">🤖</span>
+      <span class="mobile-nav-label">Agents</span>
+      <span class="notification-dot" id="dot-agents"></span>
+    </button>
+    <button class="mobile-nav-btn" onclick="showMorningSummary()">
+      <span class="mobile-nav-icon">☀️</span>
+      <span class="mobile-nav-label">Morning</span>
+      <span class="notification-dot" id="dot-morning"></span>
+    </button>
+  </nav>
+
+  <!-- Morning summary panel -->
+  <div id="morning-summary" class="hidden">
+    <div id="morning-summary-inner">
+      <div id="morning-summary-header">
+        <h2>☀️ Morning Briefing</h2>
+        <button id="morning-summary-close" onclick="hideMorningSummary()">×</button>
+      </div>
+      <div id="morning-summary-content">
+        <!-- Filled dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
   <script src="game.js"></script>
 </body>
 </html>
