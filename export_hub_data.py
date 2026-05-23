@@ -113,6 +113,13 @@ def _sector_from_id(universe_id):
     return mapping.get(universe_id, universe_id.replace('_', ' ').title())
 
 
+def _read_last_updated(path):
+    try:
+        return json.loads(path.read_text(encoding='utf-8')).get('last_updated')
+    except Exception:
+        return None
+
+
 def _migrate(conn):
     try:
         conn.execute('ALTER TABLE predictions ADD COLUMN prediction_type TEXT DEFAULT "forward_test"')
@@ -387,6 +394,7 @@ def main():
             'stats':        cfg.get('stats', {}),
             'color':        cfg.get('color', '#888888'),
             'icon':         cfg.get('icon', '?'),
+            'last_updated': _read_last_updated(AGENTS_DIR / f'{aid}.json'),
         }
         out = AGENTS_DIR / f'{aid}.json'
         out.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding='utf-8')
@@ -418,7 +426,8 @@ def main():
             'proven_tier_count':       sum(1 for r in ticker_rows
                                            if (r['da'] or 0) >= 0.60 and r['n_windows'] >= 10),
         },
-        'top_tickers': top5,
+        'top_tickers':  top5,
+        'last_updated': _read_last_updated(AGENTS_DIR / 'financial-analysis-agent.json'),
     }
     fin_out = AGENTS_DIR / 'financial-analysis-agent.json'
     fin_out.write_text(json.dumps(fin_payload, indent=2, ensure_ascii=False), encoding='utf-8')
