@@ -1620,6 +1620,20 @@ function updateNotificationDots() {
   }
 }
 
+function fetchLiveStatus() {
+  fetch('http://127.0.0.1:5000/status')
+    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+    .then(data => {
+      (data.agents || []).forEach(agent => {
+        if (HUB_DATA.agents[agent.id]) {
+          HUB_DATA.agents[agent.id].last_updated = agent.last_updated;
+        }
+      });
+      updateNotificationDots();
+    })
+    .catch(() => {});
+}
+
 // ══════════════════════════════════════════════════════════════════
 // LAST UPDATED
 // ══════════════════════════════════════════════════════════════════
@@ -1671,6 +1685,7 @@ function init() {
     buildUnivPlanets();
     updateLastUpdated();
     updateNotificationDots();
+    fetchLiveStatus();
     navigateTo('GALAXY');
     maybeShowWelcome();
     document.getElementById('status-text').textContent =
