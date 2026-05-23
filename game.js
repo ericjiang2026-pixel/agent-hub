@@ -1515,7 +1515,67 @@ function formatRelativeTime(lastUpdated) {
   return `${days}d ago`;
 }
 
-function buildMorningSummaryContent() {
+const SCRIPT_LABELS = {
+  'daily_forward_test':    'Forward Test',
+  'reconcile_predictions': 'Reconcile',
+};
+function scriptLabel(name) {
+  return SCRIPT_LABELS[name] ||
+    name.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+function formatEventTime(isoStr) {
+  const d = new Date(isoStr);
+  let h = d.getHours();
+  const m = String(d.getMinutes()).padStart(2, '0');
+  const ampm = h >= 12 ? 'pm' : 'am';
+  h = h % 12 || 12;
+  return `${h}:${m}${ampm}`;
+}
+
+async function buildMorningSummaryContent() {
+  // Fetch session log — silently fail if server is down
+  let sessionLog = { events: [], last_session_start: null, streak: 0 };
+  try {
+    const r = await fetch('http://127.0.0.1:5000/session-log');
+    if (r.ok) sessionLog = await r.json();
+  } catch (_) {}
+
+  // ── Section 1: Overnight Activity ──────────────────────────────
+  const cutoff = sessionLog.last_session_start
+    ? new Date(sessionLog.last_session_start)
+    : new Date(Date.now() - 12 * 3600000);
+
+  const recentEvents = (sessionLog.events || []).filter(
+    ev => new Date(ev.timestamp) >= cutoff
+  );
+
+  let overnightHtml;
+  if (recentEvents.length === 0) {
+    overnightHtml = `<div class="summary-agent-status" style="padding:8px 0">No activity recorded yet — check back after 9:35am.</div>`;
+  } else {
+    overnightHtml = recentEvents.map(ev => {
+      const icon   = ev.status === 'success' ? '✅' : '❌';
+      const label  = scriptLabel(ev.script_name);
+      const t      = formatEventTime(ev.timestamp);
+      const detail = [
+        ev.rows_added > 0 ? `${ev.rows_added} rows` : null,
+        ev.message         ? ev.message              : null,
+        ev.error           ? `Error: ${ev.error}`    : null,
+      ].filter(Boolean).join(' · ');
+      return `
+        <div class="summary-agent-row">
+          <div style="font-size:16px;line-height:1">${icon}</div>
+          <div class="summary-agent-info">
+            <div class="summary-agent-name">${label}</div>
+            ${detail ? `<div class="summary-agent-status">${detail}</div>` : ''}
+          </div>
+          <div class="summary-agent-time">${t}</div>
+        </div>`;
+    }).join('');
+  }
+
+  // ── Section 2: Agent Health ─────────────────────────────────────
   const statuses = MORNING_AGENT_IDS.map(id => {
     const agent  = HUB_DATA.agents[id] || {};
     const health = agentHealthColor(agent.last_updated || null);
@@ -1523,9 +1583,9 @@ function buildMorningSummaryContent() {
   });
 
   const agentRowsHtml = statuses.map(({ id, agent, health }) => {
-    const name      = agent.display_name || id;
-    const icon      = agent.icon || '?';
-    const timeStr   = formatRelativeTime(agent.last_updated || null);
+    const name       = agent.display_name || id;
+    const icon       = agent.icon || '?';
+    const timeStr    = formatRelativeTime(agent.last_updated || null);
     const statusText = health === 'green'  ? 'Active'
                      : health === 'yellow' ? 'Needs attention'
                      : 'Stale — check agent';
@@ -1542,19 +1602,25 @@ function buildMorningSummaryContent() {
 
   const redAgents    = statuses.filter(s => s.health === 'red');
   const yellowAgents = statuses.filter(s => s.health === 'yellow');
+  const errorEvents  = recentEvents.filter(ev => ev.status === 'error');
 
   let alertsHtml = '';
   if (redAgents.length > 0) {
     const names = redAgents.map(s => s.agent.display_name || s.id).join(', ');
     alertsHtml += `<div class="summary-alert">⚠ ${names} ${redAgents.length > 1 ? 'are' : 'is'} stale and may need attention.</div>`;
   }
-  const fwdCount = (HUB_DATA.tickers || []).filter(t => t.forward_test_active).length;
+  const fwdCount = (HUB_DATA.tickers || []).filter(tk => tk.forward_test_active).length;
   if (fwdCount > 0) {
     alertsHtml += `<div class="summary-alert" style="background:rgba(74,158,255,0.1);border-color:rgba(74,158,255,0.3);color:var(--accent)">📈 ${fwdCount} tickers in forward test — open Financial Agent to review.</div>`;
   }
 
+  // ── Section 3: Recommended Action ──────────────────────────────
   let recText;
-  if (redAgents.length > 0) {
+  if (errorEvents.length > 0) {
+    const errLabel = scriptLabel(errorEvents[0].script_name);
+    const errMsg   = errorEvents[0].error;
+    recText = `${errLabel} encountered an error overnight${errMsg ? `: "${errMsg}"` : ''}. Check server.log for details.`;
+  } else if (redAgents.length > 0) {
     const names = redAgents.map(s => s.agent.display_name || s.id).join(', ');
     recText = `${names} ${redAgents.length > 1 ? 'have' : 'has'} not been updated recently. Open Claude Code and run the agent${redAgents.length > 1 ? 's' : ''} to refresh.`;
   } else if (yellowAgents.length > 0) {
@@ -1565,7 +1631,9 @@ function buildMorningSummaryContent() {
   }
 
   return `
-    <div class="summary-section-title">Agent Health</div>
+    <div class="summary-section-title">Overnight Activity</div>
+    ${overnightHtml}
+    <div class="summary-section-title" style="margin-top:20px">Agent Health</div>
     ${agentRowsHtml}
     ${alertsHtml ? `<div style="margin-top:12px">${alertsHtml}</div>` : ''}
     <div class="summary-recommendation">
@@ -1574,13 +1642,15 @@ function buildMorningSummaryContent() {
     </div>`;
 }
 
-function showMorningSummary() {
+async function showMorningSummary() {
   const el = document.getElementById('morning-summary');
   if (!el) return;
-  document.getElementById('morning-summary-content').innerHTML = buildMorningSummaryContent();
   el.classList.remove('hidden');
   document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('active'));
   document.querySelector('#mobile-bottom-nav .mobile-nav-btn:last-child').classList.add('active');
+  document.getElementById('morning-summary-content').innerHTML =
+    '<div style="padding:20px;text-align:center;color:var(--text-muted)">Loading…</div>';
+  document.getElementById('morning-summary-content').innerHTML = await buildMorningSummaryContent();
 }
 
 function hideMorningSummary() {
@@ -1689,6 +1759,7 @@ function init() {
     updateLastUpdated();
     updateNotificationDots();
     fetchLiveStatus();
+    fetch('http://127.0.0.1:5000/mark-session-start').catch(() => {});
     navigateTo('GALAXY');
     maybeShowWelcome();
     document.getElementById('status-text').textContent =
