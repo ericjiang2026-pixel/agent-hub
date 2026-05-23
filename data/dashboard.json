@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T21:40:45.626622+00:00",
+  "generated_at": "2026-05-23T04:36:21.389363+00:00",
   "methodology": {
     "backtesting": "Walk-forward validation. For each ticker, we train on 252 days of price history, then test predictions on the next 21 days. We step forward 7 days and repeat. This avoids look-ahead bias — the model never sees future data during training.",
     "directional_accuracy": "We predict UP (if Monte Carlo win rate > 55%), DOWN (< 45%), or NEUTRAL. DA measures how often UP/DOWN predictions are correct, excluding neutrals.",
@@ -38,6 +38,6 @@
     "best_ticker_1w": "SPOT",
     "best_da_1w": 0.6724,
     "mean_da_1w": 0.4597,
-    "forward_test_predictions": 100
+    "forward_test_predictions": 255
   }
 }

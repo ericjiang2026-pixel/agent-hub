@@ -33,5 +33,6 @@
     "follow_ups_drafted": 0
   },
   "color": "#9B59B6",
-  "icon": "📅"
+  "icon": "📅",
+  "last_updated": null
 }

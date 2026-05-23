@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-19T21:40:45.625619+00:00",
+  "generated_at": "2026-05-23T04:36:21.389363+00:00",
   "agent_count": 5,
   "total_backtest_windows": 1389731,
   "hub_version": "2.0.0",
-  "last_forward_test": "2026-05-19T16:43:25.886750+00:00"
+  "last_forward_test": "2026-05-23T04:33:55.504849+00:00"
 }
