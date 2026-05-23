@@ -220,11 +220,11 @@ function drawGalaxy() {
   updateGalaxyPlanets();
   galaxyPlanets.forEach(p => {
     drawPlanet(p.x, p.y, p.radius, p.color, p.label, p.icon,
-               p.scaleAnim, p.alphaAnim, false);
+               p.scaleAnim, p.alphaAnim, false, p.id);
   });
 }
 
-function drawPlanet(x, y, r, color, label, icon, scale, alpha, pulse) {
+function drawPlanet(x, y, r, color, label, icon, scale, alpha, pulse, agentId) {
   const ef = scale * alpha;
   if (ef < 0.01) return;
   ctx.save();
@@ -252,6 +252,19 @@ function drawPlanet(x, y, r, color, label, icon, scale, alpha, pulse) {
   ctx.fill();
   ctx.shadowBlur = 0;
 
+  // Health ring
+  if (agentId && HUB_DATA.agents[agentId]) {
+    const health = agentHealthColor(HUB_DATA.agents[agentId].last_updated || null);
+    const ringColor = health === 'green'  ? 'rgba(46,204,113,0.8)'
+                    : health === 'yellow' ? 'rgba(243,156,18,0.8)'
+                    : 'rgba(231,76,60,0.8)';
+    ctx.beginPath();
+    ctx.arc(0, 0, r + 2, 0, Math.PI * 2);
+    ctx.strokeStyle = ringColor;
+    ctx.lineWidth = 3;
+    ctx.stroke();
+  }
+
   // Icon
   if (icon) {
     ctx.font = `${Math.round(r * 0.9)}px system-ui`;
@@ -270,6 +283,16 @@ function drawPlanet(x, y, r, color, label, icon, scale, alpha, pulse) {
   lines.forEach((line, i) => {
     ctx.fillText(line, 0, r + 6 + i * 14);
   });
+
+  // Timestamp
+  if (agentId && HUB_DATA.agents[agentId]) {
+    const timeStr = formatRelativeTime(HUB_DATA.agents[agentId].last_updated || null);
+    ctx.font      = '9px system-ui';
+    ctx.fillStyle = 'rgba(136,136,170,0.8)';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    ctx.fillText(timeStr, 0, r + 6 + lines.length * 14);
+  }
 
   ctx.restore();
 }
@@ -1349,6 +1372,7 @@ document.getElementById('btn-back').addEventListener('click', () => {
 document.getElementById('btn-refresh').addEventListener('click', () => {
   loadAllData().then(() => {
     updateLastUpdated();
+    updateNotificationDots();
     const lvl = STATE.level;
     if (lvl === 'UNIVERSE') buildTickerPlanets(STATE.selectedUniverse);
     if (lvl === 'AGENT_FINANCIAL') buildUnivPlanets();
@@ -1564,6 +1588,39 @@ function hideMorningSummary() {
 }
 
 // ══════════════════════════════════════════════════════════════════
+// NOTIFICATION DOTS
+// ══════════════════════════════════════════════════════════════════
+const REACTIVE_AGENT_IDS = ['email-agent', 'meeting-prep-agent', 'text-agent', 'decision-memo-agent'];
+
+function updateNotificationDots() {
+  ['dot-hub', 'dot-financial', 'dot-agents', 'dot-morning'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.remove('visible');
+  });
+
+  const finAgent = HUB_DATA.agents['financial-analysis-agent'] || {};
+  const finHealth = agentHealthColor(finAgent.last_updated || null);
+  if (finHealth === 'yellow' || finHealth === 'red') {
+    const df = document.getElementById('dot-financial');
+    const dh = document.getElementById('dot-hub');
+    if (df) df.classList.add('visible');
+    if (dh) dh.classList.add('visible');
+  }
+
+  const anyReactiveBad = REACTIVE_AGENT_IDS.some(id => {
+    const agent = HUB_DATA.agents[id] || {};
+    const h = agentHealthColor(agent.last_updated || null);
+    return h === 'yellow' || h === 'red';
+  });
+  if (anyReactiveBad) {
+    const da = document.getElementById('dot-agents');
+    const dh = document.getElementById('dot-hub');
+    if (da) da.classList.add('visible');
+    if (dh) dh.classList.add('visible');
+  }
+}
+
+// ══════════════════════════════════════════════════════════════════
 // LAST UPDATED
 // ══════════════════════════════════════════════════════════════════
 function updateLastUpdated() {
@@ -1613,6 +1670,7 @@ function init() {
     buildGalaxyPlanets();
     buildUnivPlanets();
     updateLastUpdated();
+    updateNotificationDots();
     navigateTo('GALAXY');
     maybeShowWelcome();
     document.getElementById('status-text').textContent =
