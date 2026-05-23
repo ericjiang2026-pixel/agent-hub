@@ -550,7 +550,13 @@ body {
   cursor: pointer;
   line-height: 1;
   padding: 0 4px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+#mobile-back { display: none; }
 #dashboard-close:hover { color: var(--text); }
 #dashboard-tabs {
   display: flex;
@@ -783,7 +789,25 @@ body {
   :root { --nav-h: 48px; }
   #quick-nav { display: none; }
   #bottom-bar { display: none; }
+  #btn-refresh { display: none; }
+  #last-updated { display: none; }
   #mobile-bottom-nav { display: flex; }
+  #mobile-back:not(.hidden) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    flex-shrink: 0;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 0 8px;
+    white-space: nowrap;
+  }
   #galaxy { top: 48px; bottom: var(--bottom-nav-h); }
   #planet-overlay { top: 48px; bottom: var(--bottom-nav-h); }
   #ticker-list-container { top: 48px; bottom: var(--bottom-nav-h); }

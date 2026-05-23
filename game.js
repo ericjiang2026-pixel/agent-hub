@@ -727,6 +727,7 @@ function navigateTo(level, opts) {
   STATE.zoomTarget = null;
 
   document.getElementById('btn-back').classList.toggle('hidden', level === 'GALAXY');
+  document.getElementById('mobile-back').classList.toggle('hidden', level === 'GALAXY');
   const st = document.getElementById('status-text');
 
   if (level === 'GALAXY') {
@@ -1357,7 +1358,7 @@ function zoomTransition(callback) {
 }
 
 // Back button
-document.getElementById('btn-back').addEventListener('click', () => {
+function goBack() {
   if (STATE.level === 'AGENT_FINANCIAL' || STATE.level === 'AGENT_REACTIVE' || STATE.level === 'BUILD_GUIDE') {
     zoomTransition(() => navigateTo('GALAXY'));
   } else if (STATE.level === 'UNIVERSE') {
@@ -1366,7 +1367,9 @@ document.getElementById('btn-back').addEventListener('click', () => {
     closePanel();
     STATE.level = 'UNIVERSE';
   }
-});
+}
+document.getElementById('btn-back').addEventListener('click', goBack);
+document.getElementById('mobile-back').addEventListener('click', goBack);
 
 // Refresh button
 document.getElementById('btn-refresh').addEventListener('click', () => {
