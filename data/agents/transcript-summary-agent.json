@@ -1,8 +1,30 @@
 {
   "id": "transcript-summary-agent",
   "display_name": "Transcript Summary Agent",
-  "status": "built",
   "type": "reactive",
+  "category": "reactive",
+  "status": "built",
+  "version": "1.0.0",
   "description": "Reads a pasted meeting transcript and produces a structured summary: key decisions, action items with owners (explicit vs. inferred clearly marked), and open questions.",
+  "functions": [
+    {
+      "id": "classify",
+      "label": "Classify",
+      "description": "Classify incoming input"
+    },
+    {
+      "id": "produce",
+      "label": "Produce",
+      "description": "Generate output"
+    },
+    {
+      "id": "learn",
+      "label": "Learn",
+      "description": "Absorb feedback"
+    }
+  ],
+  "stats": {},
+  "color": "#888888",
+  "icon": "?",
   "last_updated": "2026-05-29"
 }
