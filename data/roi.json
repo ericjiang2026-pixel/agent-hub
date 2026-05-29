@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-05-29T20:42:51.176489+00:00",
+  "agents": [
+    {
+      "agent_id": "email-agent",
+      "display_name": "Email Agent",
+      "composite_score": 2.0,
+      "improvement_score": null,
+      "improvement_status": "baseline established, trend pending",
+      "time_saved_minutes": 10,
+      "time_saved_status": "2 drafts x 5 min (draft-output.json)",
+      "money_value": null,
+      "money_status": "n/a for this agent",
+      "last_computed": "2026-05-29T20:42:51.177998+00:00",
+      "one_line_summary": "Trained on 24 replies; similarity baseline 23%; 2 drafts delivered."
+    },
+    {
+      "agent_id": "financial-analysis-agent",
+      "display_name": "Financial Analysis Agent",
+      "composite_score": 93.8,
+      "improvement_score": null,
+      "improvement_status": "pending — first resolutions ~June 9",
+      "time_saved_minutes": 7320,
+      "time_saved_status": "488 analyses x 15 min",
+      "money_value": null,
+      "money_status": "pending — Alpaca not connected",
+      "last_computed": "2026-05-29T20:42:51.182337+00:00",
+      "one_line_summary": "488 forward-test analyses run; accuracy + portfolio value pending."
+    },
+    {
+      "agent_id": "meeting-prep-agent",
+      "display_name": "Meeting Prep Agent",
+      "composite_score": null,
+      "improvement_score": null,
+      "improvement_status": "not yet active",
+      "time_saved_minutes": null,
+      "time_saved_status": "not yet active",
+      "money_value": null,
+      "money_status": "not yet active",
+      "last_computed": "2026-05-29T20:42:51.182337+00:00",
+      "one_line_summary": "Not yet active — no live data source."
+    },
+    {
+      "agent_id": "text-agent",
+      "display_name": "Text Agent",
+      "composite_score": null,
+      "improvement_score": null,
+      "improvement_status": "not yet active",
+      "time_saved_minutes": null,
+      "time_saved_status": "not yet active",
+      "money_value": null,
+      "money_status": "not yet active",
+      "last_computed": "2026-05-29T20:42:51.182337+00:00",
+      "one_line_summary": "Not yet active — no live data source."
+    },
+    {
+      "agent_id": "decision-memo-agent",
+      "display_name": "Decision Memo Agent",
+      "composite_score": null,
+      "improvement_score": null,
+      "improvement_status": "not yet active",
+      "time_saved_minutes": null,
+      "time_saved_status": "not yet active",
+      "money_value": null,
+      "money_status": "not yet active",
+      "last_computed": "2026-05-29T20:42:51.182337+00:00",
+      "one_line_summary": "Not yet active — no live data source."
+    }
+  ]
+}

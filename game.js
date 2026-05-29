@@ -1541,6 +1541,13 @@ async function buildMorningSummaryContent() {
     if (r.ok) sessionLog = await r.json();
   } catch (_) {}
 
+  // Fetch ROI feed — silently fail if server is down
+  let roi = { generated_at: null, agents: [] };
+  try {
+    const rr = await fetch('http://127.0.0.1:5000/roi');
+    if (rr.ok) roi = await rr.json();
+  } catch (_) {}
+
   // ── Section 1: Overnight Activity ──────────────────────────────
   const cutoff = sessionLog.last_session_start
     ? new Date(sessionLog.last_session_start)
@@ -1614,6 +1621,39 @@ async function buildMorningSummaryContent() {
     alertsHtml += `<div class="summary-alert" style="background:rgba(74,158,255,0.1);border-color:rgba(74,158,255,0.3);color:var(--accent)">📈 ${fwdCount} tickers in forward test — open Financial Agent to review.</div>`;
   }
 
+  // ── Section: Agent Value (ROI) ─────────────────────────────────
+  const roiAgents = roi.agents || [];
+  let roiHtml;
+  if (roiAgents.length === 0) {
+    roiHtml = `<div class="summary-agent-status" style="padding:8px 0">No ROI data yet — run roi_report.py.</div>`;
+  } else {
+    roiHtml = roiAgents.map(a => {
+      const active = a.composite_score !== null && a.composite_score !== undefined;
+      const greyStyle = active ? '' : 'opacity:0.45;';
+      const compStr = active
+        ? `${a.composite_score}<span style="font-size:10px;font-weight:400;color:var(--text-muted)">/100</span>`
+        : '—';
+      const impStr = (a.improvement_score !== null && a.improvement_score !== undefined)
+        ? `${a.improvement_score}/100` : (a.improvement_status || '—');
+      const minsStr = (a.time_saved_minutes !== null && a.time_saved_minutes !== undefined)
+        ? `${a.time_saved_minutes} min` : (a.time_saved_status || '—');
+      const moneyStr = (a.money_value !== null && a.money_value !== undefined)
+        ? `$${a.money_value}` : (a.money_status || '—');
+      const notActive = active
+        ? ''
+        : ` <span style="color:var(--text-muted);font-weight:400;font-size:11px">· not yet active</span>`;
+      return `
+        <div class="summary-agent-row" style="${greyStyle}">
+          <div class="summary-agent-info">
+            <div class="summary-agent-name">${a.display_name}${notActive}</div>
+            <div class="summary-agent-status">Improvement: ${impStr} · Time saved: ${minsStr} · Money: ${moneyStr}</div>
+            ${a.one_line_summary ? `<div class="summary-agent-status" style="margin-top:2px;opacity:0.85">${a.one_line_summary}</div>` : ''}
+          </div>
+          <div class="summary-agent-time" style="font-size:18px;font-weight:700">${compStr}</div>
+        </div>`;
+    }).join('');
+  }
+
   // ── Section 3: Recommended Action ──────────────────────────────
   let recText;
   if (errorEvents.length > 0) {
@@ -1636,6 +1676,8 @@ async function buildMorningSummaryContent() {
     <div class="summary-section-title" style="margin-top:20px">Agent Health</div>
     ${agentRowsHtml}
     ${alertsHtml ? `<div style="margin-top:12px">${alertsHtml}</div>` : ''}
+    <div class="summary-section-title" style="margin-top:20px">Agent Value</div>
+    ${roiHtml}
     <div class="summary-recommendation">
       <div class="summary-rec-label">Recommended Action</div>
       <div class="summary-rec-text">${recText}</div>
