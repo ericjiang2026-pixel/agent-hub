@@ -389,7 +389,7 @@ def main():
             'category':     agent.get('category', ''),
             'status':       agent.get('status', 'live'),
             'version':      agent.get('version', '1.0.0'),
-            'description':  cfg.get('description', ''),
+            'description':  cfg.get('description') or agent.get('description', ''),
             'functions':    cfg.get('functions', GENERIC_FUNCTIONS),
             'stats':        cfg.get('stats', {}),
             'color':        cfg.get('color', '#888888'),
