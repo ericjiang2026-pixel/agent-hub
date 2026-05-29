@@ -1,0 +1,8 @@
+{
+  "id": "transcript-summary-agent",
+  "display_name": "Transcript Summary Agent",
+  "status": "built",
+  "type": "reactive",
+  "description": "Reads a pasted meeting transcript and produces a structured summary: key decisions, action items with owners (explicit vs. inferred clearly marked), and open questions.",
+  "last_updated": "2026-05-29"
+}
