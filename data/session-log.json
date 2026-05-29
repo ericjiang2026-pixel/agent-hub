@@ -1,1 +1,150 @@
-{"events": [], "last_session_start": null, "streak": 0}
+{
+  "events": [
+    {
+      "timestamp": "2026-05-23T16:39:31.160987+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 39,
+      "message": "Logged 39 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-23T23:30:06.180583+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 272, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-24T23:30:07.941485+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 272, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-25T16:44:37.419323+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 39,
+      "message": "Logged 39 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-25T18:27:21.037019+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 39,
+      "message": "Logged 39 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-25T23:30:08.815963+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 350, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-25T23:30:08.828523+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 350, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-26T16:56:45.562029+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 38,
+      "message": "Logged 38 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-27T03:12:02.720092+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 388, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-27T10:31:33.189915+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 388, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-27T18:10:04.158553+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 39,
+      "message": "Logged 39 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-27T18:10:14.817769+00:00",
+      "script_name": "daily_forward_test",
+      "status": "success",
+      "rows_added": 39,
+      "message": "Logged 39 predictions for 39 tickers",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-27T23:30:08.118279+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 466, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-28T23:30:08.925168+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 466, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-28T23:30:08.954534+00:00",
+      "script_name": "reconcile_predictions",
+      "status": "success",
+      "rows_added": 0,
+      "message": "Resolved 0, pending 466, errors 0",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-29T18:54:59.991618+00:00",
+      "script_name": "email_triage",
+      "status": "success",
+      "rows_added": 2,
+      "message": "Triaged 100 emails, drafted 2 replies",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-29T19:30:42.900980+00:00",
+      "script_name": "email_self_train",
+      "status": "success",
+      "rows_added": 81,
+      "message": "Trained on 17 replies, logged 81 lessons, avg similarity 18.5%",
+      "error": ""
+    },
+    {
+      "timestamp": "2026-05-29T20:00:45.929155+00:00",
+      "script_name": "email_self_train",
+      "status": "success",
+      "rows_added": 126,
+      "message": "Trained on 24 replies, logged 126 lessons, avg similarity 23.3%",
+      "error": ""
+    }
+  ],
+  "last_session_start": "2026-05-23T05:29:24.132118+00:00",
+  "streak": 7
+}
